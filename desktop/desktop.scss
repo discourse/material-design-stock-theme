@@ -214,7 +214,7 @@ and (max-width: 1250px)
 
 @keyframes background-fade-highlight {
     0% {
-        background-color: $tertiary;
+        background-color: background-color: lighten($tertiary, 20%);
     }
 
     100% {
