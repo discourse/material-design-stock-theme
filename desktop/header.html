@@ -1,0 +1,83 @@
+<script type='text/x-handlebars' data-template-name='list/topic-list-item.raw'>
+
+<td class='main-link clearfix'>
+
+  {{raw "topic-status" topic=topic}}
+  {{topic-link topic}}
+  {{#if controller.showTopicPostBadges}}
+    {{raw "topic-post-badges" unread=topic.unread newPosts=topic.displayNewPosts unseen=topic.unseen url=topic.lastUnreadUrl}}
+  {{/if}}
+
+
+  {{raw "list/topic-excerpt" topic=model}}
+  <div class='creator'>
+  {{#if showCategory}}
+     {{category-link topic.category}}
+   {{/if}}
+  {{~#if topic.creator ~}}
+  <a href="/users/{{topic.creator.username}}" data-auto-route="true" data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> <a href={{topic.url}}>{{format-date topic.createdAt format="tiny"}}</a>
+  {{~/if ~}}
+   {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
+   </div>
+</td>
+
+
+
+{{#if controller.showLikes}}
+<td class="num likes">
+  {{number topic.like_count}} <i class='fa fa-heart'></i>
+</td>
+{{/if}}
+   
+{{#if controller.showOpLikes}}
+<td class="num likes">
+  {{number topic.op_like_count}} <i class='fa fa-heart'></i>
+</td>
+{{/if}}
+
+{{raw "list/posts-count-column" topic=topic}}
+
+<td class="last-post">
+<div class='poster-avatar'>
+<a href="{{topic.lastPostUr}}" data-user-card="{{topic.last_poster_username}}">{{avatar topic.lastPoster usernamePath="username" imageSize="medium"}}</a>
+</div>
+<div class='poster-info'>
+<a href="{{topic.lastPostUrl}}">
+{{format-date topic.bumpedAt format="tiny"}}
+</a>
+<span class='editor'><a href="/users/{{topic.last_poster_username}}" data-auto-route="true" data-user-card="{{topic.last_poster_username}}">{{topic.last_poster_username}}</a></span>
+</div>
+</td>
+</script>
+
+<script type='text/x-handlebars' data-template-name='topic-list-header.raw'>
+  {{raw "topic-list-header-column" order='posts' name='topic.title'}}
+  
+  {{#if showLikes}}
+     {{raw "topic-list-header-column" sortable='true' order='likes' number='true' forceName='Likes'}}
+  {{/if}}
+  {{#if showOpLikes}}
+     {{raw "topic-list-header-column" sortable='true' order='op_likes' number='true' forceName='Likes'}}
+  {{/if}}
+  {{raw "topic-list-header-column" sortable='true' number='true' order='posts' forceName='Replies'}}
+  {{raw "topic-list-header-column" sortable='true' order='activity' forceName='Last Post'}}
+</script>
+
+<script>
+
+(function(){
+
+var TopicListItemView = require('discourse/components/topic-list-item').default;
+
+
+TopicListItemView.reopen({
+    showCategory: function(){
+        return !this.get('controller.hideCategory') &&
+                this.get('topic.creator') &&
+                this.get('topic.category.name') !== 'uncategorized';
+    }.property()
+});
+   
+})();
+ 
+</script>
