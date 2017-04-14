@@ -231,3 +231,71 @@ and (max-width: 1250px)
     border-top: none;
 }
 
+.widget-button.btn.notifications-dropdown .fa {
+  margin-left: -2px;
+}
+
+// RTL Overrides
+.rtl {
+  .topic-avatar {
+    padding-right: initial;
+    padding-left: 10px;
+    .avatar-flair {
+      right: initial;
+      left: 4px;
+    }
+  }
+
+  .embedded-posts .topic-avatar {
+    padding-left: initial;
+    padding-right: 0;
+  }
+
+  button#login-link, button#new-account-link {
+    padding-left: initial;
+    padding-right: inherit;
+  }
+
+  #create-topic.btn-default {
+    right: initial;
+    left: 50px;
+    padding: 24px 5px 22px 20px;
+  }
+
+  .widget-button.btn.create {
+    left: initial;
+    right: -18px;
+    padding: 24px 5px 22px 20px;
+  }
+
+  .widget-button.btn.create .fa-reply {
+    margin-left: initial;
+    margin-right: -8px;
+  }
+
+  .widget-button.btn.notifications-dropdown {
+    right: initial;
+    left: 4px;
+  }
+
+  .widget-button.btn.notifications-dropdown .fa {
+    margin-left: initial;
+    margin-right: -2px;
+  }
+}
+
+// RTL Overrides
+@media only screen
+and (min-width : 768px)
+and (max-width: 1250px) {
+  .rtl {
+    .timeline-container {
+      margin-left: initial;
+      margin-right: 820px;
+    }
+    .topic-admin-popup-menu {
+      left: initial !important;
+      right:-40% !important;
+    }
+  }
+}
