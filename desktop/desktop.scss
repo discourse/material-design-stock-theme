@@ -231,12 +231,15 @@ and (max-width: 1250px)
     border-top: none;
 }
 
-.widget-button.btn.notifications-dropdown .fa {
-  margin-left: -2px;
-}
+
 
 // RTL Overrides
 .rtl {
+      
+  .widget-button.btn.notifications-dropdown .fa {
+     margin-left: -2px;
+  }
+      
   .topic-avatar {
     padding-right: initial;
     padding-left: 10px;
