@@ -32,7 +32,17 @@
 
 //remove highlighting navigation background on hover
 .nav-pills > li > a:hover{
-    background-color: $secondary;
+  background-color: $secondary;
+}
+
+//fix color of user profile navigation icons
+.user-main .nav-pills {
+  a.active i {
+    color: $primary;
+  }
+  a:hover:not(.active) i {
+    color: $quaternary;
+  }
 }
 
 //add shadow behind the list of topics, but not categories
