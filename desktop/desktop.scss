@@ -98,8 +98,11 @@
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
-//flatten editor buttons
-.d-editor-button-bar .btn{
+//flatten editor, topic-map, more badges, and revision view buttons
+.d-editor-button-bar .btn,
+.topic-map .btn.no-text,
+.badge-section .btn,
+#revision .btn {
     border-radius: 0px;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
