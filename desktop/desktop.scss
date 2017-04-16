@@ -123,6 +123,11 @@ padding-left:inherit;
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+//shift "more" button slightly left
+.more-topics .btn {
+    margin-right: 10px;
+}
+
 
 //New Topic Fab
 #create-topic.btn-default {
