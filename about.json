@@ -26,6 +26,42 @@
       "danger": "ff6d00",
       "success": "4caf50",
       "love": "fa6c8d"
+    },
+    "Material Blue/Red": {
+      "primary": "212121",
+      "secondary": "fafafa",
+      "tertiary": "ff5252",
+      "quaternary": "2196f3",
+      "header_background": "1976f2",
+      "header_primary": "ffffff",
+      "highlight": "ffff8d",
+      "danger": "ff6d00",
+      "success": "4caf50",
+      "love": "fa6c8d"
+    },
+    "Material Indigo/Orange": {
+      "primary": "212121",
+      "secondary": "fafafa",
+      "tertiary": "ff5722",
+      "quaternary": "3f51b5",
+      "header_background": "303f9f",
+      "header_primary": "ffffff",
+      "highlight": "fffeb3b",
+      "danger": "f44336",
+      "success": "4caf50",
+      "love": "fa6c8d"
+    },
+    "Material Dark": {
+      "primary": "fafafa",
+      "secondary": "212121",
+      "tertiary": "00bcd4",
+      "quaternary": "00bcd4",
+      "header_background": "000000",
+      "header_primary": "ffffff",
+      "highlight": "fafafa",
+      "danger": "e45735",
+      "success": "009900",
+      "love": "fa6c8d"
     }
   }
 }
