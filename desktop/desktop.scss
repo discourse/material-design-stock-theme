@@ -77,6 +77,11 @@
     }
 }
 
+//remove stray border from bottom of last post
+.topic-status-info {
+    border-top: 0;
+}
+
 //improve format of embedded posts
 
 .embedded-posts .topic-avatar{
