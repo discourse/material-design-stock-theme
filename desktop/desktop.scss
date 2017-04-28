@@ -55,11 +55,11 @@
 .admin-controls .nav.nav-pills li.active a {
     background-color: lighten($secondary, 6%);
     color: $tertiary;
-    border-color: $quaternary;
+    border-color: $tertiary;
 }
 
-.admin-controls .nav-pills > li > a:hover,
-.admin-controls .nav-pills li.active a:hover{
+.admin-controls .nav.nav-pills > li > a:hover,
+.admin-controls .nav.nav-pills li.active a:hover{
   background-color: lighten($secondary, 6%);
 }
 
