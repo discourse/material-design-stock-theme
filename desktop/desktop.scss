@@ -219,14 +219,13 @@ padding-left:inherit;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
 
-#create-topic.btn-default .fa-plus {
+#create-topic.btn-default i {
     color: $header-primary;
 }
 
 #create-topic.btn-default:hover {
     text-indent: 0px;
     width: 190px;
-    color: $header-primary;
 }
 
 
