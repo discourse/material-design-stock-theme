@@ -45,6 +45,34 @@
   }
 }
 
+//repeat for admin section
+.admin-controls {
+    background-color: lighten($secondary, 6%);
+    color: $primary;
+    padding-bottom: 0;
+}
+
+.admin-controls .nav.nav-pills li.active a {
+    background-color: lighten($secondary, 6%);
+    color: $tertiary;
+    border-color: $quaternary;
+}
+
+.admin-controls .nav-pills > li > a:hover,
+.admin-controls .nav-pills li.active a:hover{
+  background-color: lighten($secondary, 6%);
+}
+
+.admin-controls .nav-pills {
+  a.active i {
+    color: $tertiary;
+  }
+  a:hover:not(.active) i {
+    color: $quaternary;
+  }
+}
+
+
 //add shadow behind the list of topics, but not categories
 .category-list, .topic-list:not(.categories){
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -127,32 +155,6 @@
 
 .d-header .icons .icon:hover {
     border-radius: 20px;
-}
-
-.admin-controls {
-    background-color: lighten($secondary, 2%);
-    color: $primary;
-    padding-bottom: 0;
-}
-
-.admin-controls .nav.nav-pills li.active a {
-    background-color: transparent;
-    color: $primary;
-    border-color: $primary;
-}
-
-.admin-controls .nav-pills > li > a:hover{
-  background-color: $secondary;
-}
-
-//fix color of user profile navigation icons
-.admin-controls .nav-pills {
-  a.active i {
-    color: $tertiary;
-  }
-  a:hover:not(.active) i {
-    color: $quaternary;
-  }
 }
 
 //properly space buttons on login modal
