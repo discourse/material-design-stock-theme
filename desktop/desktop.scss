@@ -1,3 +1,9 @@
+//topic-list colors
+.topic-list {
+      color: $primary;
+      background-color: $secondary;
+}
+
 //add space between categories
 .topic-list.categories{  
       border-spacing: 0 1em;
