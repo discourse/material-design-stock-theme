@@ -1,9 +1,3 @@
-//topic-list colors
-.list-container {
-      color: $primary;
-      background-color: $secondary;
-}
-
 //add space between categories
 .topic-list.categories{  
       border-spacing: 0 1em;
@@ -154,20 +148,20 @@ padding-left:inherit;
     -moz-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
     box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
     overflow: hidden;
-    width: 63px;
-    height: 63px;
+    width: 56px;
+    height: 56px;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
 
 #create-topic.btn-default .fa-plus {
-    color: white;
+    color: $primary;
 }
 
 #create-topic.btn-default:hover {
     text-indent: 8px;
     width: 190px;
-    color: white;
+    color: $primary;
 }
 
 
