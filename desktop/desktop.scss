@@ -129,6 +129,18 @@
     border-radius: 20px;
 }
 
+.admin-controls {
+    background-color: $quaternary;
+    color: $primary;
+    padding-bottom: 0;
+}
+
+.admin-controls .nav.nav-pills li.active a {
+    background-color: $tertiary;
+    color: $primary;
+    border-color: $primary;
+}
+
 //properly space buttons on login modal
 button#login-link, button#new-account-link{
 padding-left:inherit;
