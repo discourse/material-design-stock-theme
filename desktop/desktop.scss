@@ -79,6 +79,7 @@
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: lighten($secondary, 2%);
+  border-radius: 2px;
   border-collapse: collapse;
 }
 
@@ -195,6 +196,18 @@ padding-left:inherit;
     color: $highlight;
 }
 
+.topic-statuses .topic-status .fa-eye-slash {
+    color: $danger;
+}
+
+.topic-statuses .topic-status .fa-lock {
+    color: #e3a600;
+}
+
+.topic-statuses .topic-status .fa-thumb-tack {
+    color: $highlight;
+}
+
 //color support for status add-on
 .topic-statuses .topic-status .fa-check-square-o {
     color: $success;
@@ -244,7 +257,7 @@ padding-left:inherit;
     top: 50px;
     left: -18px;
     z-index: 999;
-    padding: 24px 20px 22px 5px;
+    padding: 20px 2px 20px;
     background-color: $quaternary;
     color: $header-primary;
     text-indent: 10px;
@@ -252,8 +265,8 @@ padding-left:inherit;
     -moz-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
     box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
     overflow: hidden;
-    width: 63px;
-    height: 63px;
+    width: 56px;
+    height: 56px;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
