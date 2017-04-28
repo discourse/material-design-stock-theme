@@ -206,7 +206,7 @@ padding-left:inherit;
     z-index: 999;
     padding: 20px 2px 20px;
     background-color: $quaternary; 
-    color: $header-primary; 
+    color: $quaternary; 
     white-space: nowrap;
     text-indent: 10px;
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
@@ -226,6 +226,7 @@ padding-left:inherit;
 #create-topic.btn-default:hover {
     text-indent: 0px;
     width: 190px;
+    color: $header-primary;
 }
 
 
