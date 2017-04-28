@@ -191,6 +191,10 @@ padding-left:inherit;
     margin-right: 10px;
 }
 
+.topic-statuses .topic-status i {
+    color: $highlight;
+}
+
 //color support for status add-on
 .topic-statuses .topic-status .fa-check-square-o {
     color: $success;
