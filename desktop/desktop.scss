@@ -181,6 +181,11 @@ padding-left:inherit;
     color: $header-primary;
 }
 
+.btn-danger:hover{
+    background-color: lighten($danger, 10%);
+    color: $header-primary;
+}
+
 //shift "more" button slightly left
 .more-topics .btn {
     margin-right: 10px;
