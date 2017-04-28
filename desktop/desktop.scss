@@ -138,6 +138,11 @@ padding-left:inherit;
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+.btn:hover{
+    background-color: $secondary;
+    color: $primary;
+}
+
 //shift "more" button slightly left
 .more-topics .btn {
     margin-right: 10px;
