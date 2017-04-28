@@ -184,6 +184,11 @@ padding-left:inherit;
     margin-right: 10px;
 }
 
+//color support for status add-on
+.topic-statuses .topic-status i {
+    color: $success;
+}
+
 
 //New Topic Fab
 #create-topic.btn-default {
@@ -208,13 +213,13 @@ padding-left:inherit;
 }
 
 #create-topic.btn-default .fa-plus {
-    color: $primary;
+    color: $header-primary;
 }
 
 #create-topic.btn-default:hover {
     text-indent: 0px;
     width: 190px;
-    color: $primary;
+    color: $header-primary;
 }
 
 
