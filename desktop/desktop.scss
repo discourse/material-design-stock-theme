@@ -130,15 +130,29 @@
 }
 
 .admin-controls {
-    background-color: $quaternary;
+    background-color: lighten($secondary, 2%);
     color: $primary;
     padding-bottom: 0;
 }
 
 .admin-controls .nav.nav-pills li.active a {
-    background-color: $tertiary;
+    background-color: transparent;
     color: $primary;
     border-color: $primary;
+}
+
+.admin-controls .nav-pills > li > a:hover{
+  background-color: $secondary;
+}
+
+//fix color of user profile navigation icons
+.admin-controls .nav-pills {
+  a.active i {
+    color: $tertiary;
+  }
+  a:hover:not(.active) i {
+    color: $quaternary;
+  }
 }
 
 //properly space buttons on login modal
