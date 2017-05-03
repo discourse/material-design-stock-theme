@@ -192,14 +192,17 @@ padding-left:inherit;
     margin-right: 10px;
 }
 
+//Misc status icons (pinnned, unpinned)
 .topic-statuses .topic-status i {
     color: $highlight;
 }
 
+//Unlisted status icon
 .topic-statuses .topic-status .fa-eye-slash {
     color: $danger;
 }
 
+//Archived status icon
 .topic-statuses .topic-status .fa-lock {
     color: #e3a600;
 }
