@@ -4,6 +4,13 @@
       border-collapse: separate;
 }
 
+//change breadcrumb dropdowns
+.category-breadcrumb > * > * > * {
+      background-color: $secondary;
+      color: $quaternary;
+      border: none;
+}
+
 //change category background color to white
 .topic-list.categories>tbody>tr{
     background-color: lighten($secondary, 10%);
