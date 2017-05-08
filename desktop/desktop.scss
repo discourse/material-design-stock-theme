@@ -6,16 +6,16 @@
 
 //change all categories and all tags
 .home {
-      background-color: $secondary;
-      color: $quaternary;
-      border: none;
+      background-color: $secondary !important;
+      color: $quaternary !important;
+      border: none !important;
 }
 
 //change category and tag dropdowns
 .chooser {
-      background-color: $secondary;
-      color: $quaternary;
-      border: none;
+      background-color: $secondary !important;
+      color: $quaternary !important;
+      border: none !important;
 }
 
 //change category background color to white
