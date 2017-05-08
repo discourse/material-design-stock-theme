@@ -4,15 +4,15 @@
       border-collapse: separate;
 }
 
-//change breadcrumb dropdown children-second
-.category-breadcrumb > * > * {
+//change all categories and all tags
+.home {
       background-color: $secondary;
       color: $quaternary;
       border: none;
 }
 
-//change breadcrumb dropdown children-third
-.category-breadcrumb > * > * > * {
+//change category and tag dropdowns
+.chooser {
       background-color: $secondary;
       color: $quaternary;
       border: none;
