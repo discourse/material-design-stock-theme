@@ -4,7 +4,14 @@
       border-collapse: separate;
 }
 
-//change breadcrumb dropdowns
+//change breadcrumb dropdown children-second
+.category-breadcrumb > * > * {
+      background-color: $secondary;
+      color: $quaternary;
+      border: none;
+}
+
+//change breadcrumb dropdown children-third
 .category-breadcrumb > * > * > * {
       background-color: $secondary;
       color: $quaternary;
