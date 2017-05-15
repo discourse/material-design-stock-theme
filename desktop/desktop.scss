@@ -75,6 +75,13 @@ nav.post-controls button.create:hover {
     border-radius: 2px;
 }
 
+//Other options on responses
+nav.post-controls button.d-hover {
+    background-color: lighten($secondary, 10%);
+    color: $primary;
+    border-radius: 20px;
+}
+
 //repeat for admin section
 .admin-controls {
     background-color: lighten($secondary, 6%);
