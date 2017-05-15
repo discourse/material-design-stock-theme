@@ -36,8 +36,8 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
 }
 
-//remove border at the end of discussions
-.topic-status-info {
+//remove border at "Days Later" separation and the end of discussions
+.topic-status-info, .small-action {
     border-top: none;
 }
 
@@ -50,8 +50,7 @@
   border-bottom: 3px solid $tertiary;
 }
 
-//remove highlighting navigation background on hover
-.nav-pills > li > a:hover{
+//remove highlighting navigation background on hover.nav-pills > li > a:hover{
   background-color: $secondary;
 }
 
@@ -63,6 +62,16 @@
   a:hover:not(.active) i {
     color: $quaternary;
   }
+}
+
+//Reply buttons on responses
+nav.post-controls button.d-hover {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: $tertiary;
+    color: $primary;
+    border-radius: 2px;
 }
 
 //repeat for admin section
