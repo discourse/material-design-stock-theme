@@ -77,9 +77,14 @@ nav.post-controls button.create:hover {
 
 //Mark/unmark solution button on responses
 nav.post-controls button.accepted:hover, nav.post-controls button.unaccepted:hover {
-    background-color: darken($success, 10%);
+    background-color: darken($success, 20%);
     color: $success;
     border-radius: 20px;
+}
+
+//"Solution" text spacing
+.post-controls .accepted-text {
+    margin-right: 0px;
 }
 
 //Other options on responses
