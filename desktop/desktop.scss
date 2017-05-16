@@ -82,6 +82,13 @@ nav.post-controls button.accepted:hover, nav.post-controls button.unaccepted:hov
     border-radius: 20px;
 }
 
+//Delete button on responses
+nav.post-controls button.delete:hover {
+    background-color: rgba($danger, .4);
+    color: $danger;
+    border-radius: 20px;
+}
+
 //"Solution" text spacing
 .post-controls .accepted-text {
     margin-right: 0px;
@@ -89,27 +96,27 @@ nav.post-controls button.accepted:hover, nav.post-controls button.unaccepted:hov
 
 //Other options on responses
 nav.post-controls button.d-hover {
-    background-color: rgba($secondary, 10%);
-    color: $primary;
+    background-color: rgba($secondary, .4);
+    color: $quaternary;
     border-radius: 20px;
 }
 
 //repeat for admin section
 .admin-controls {
-    background-color: rgba($secondary, 6%);
+    background-color: rgba($secondary, .4);
     color: $primary;
     padding-bottom: 0;
 }
 
 .admin-controls .nav.nav-pills li.active a {
-    background-color: rgba($secondary, 6%);
+    background-color: rgba($secondary, .4);
     color: $tertiary;
     border-color: $tertiary;
 }
 
 .admin-controls .nav.nav-pills > li > a:hover,
 .admin-controls .nav.nav-pills li.active a:hover{
-  background-color: rgba($secondary, 6%);
+    background-color: rgba($secondary, .4);
 }
 
 .admin-controls .nav-pills {
@@ -126,7 +133,7 @@ nav.post-controls button.d-hover {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  background-color: rgba($secondary, 2%);
+  background-color: lighten($secondary, 2%);
   border-radius: 2px;
   border-collapse: collapse;
 }
@@ -137,7 +144,7 @@ nav.post-controls button.d-hover {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  background-color: rgba($secondary, 2%);
+  background-color: lighten($secondary, 2%);
   margin-top: 10px;
   padding-left: 20px;
   border-radius: 2px;
@@ -203,8 +210,8 @@ nav.post-controls button.d-hover {
 }
 
 .d-header .icons .icon:hover {
-    color: rgba($header-primary, 10%);
-    background-color: rgba($header-background, 10%);
+    color: rgba($header-primary, .4);
+    background-color: rgba($header-background, .4);
     border-radius: 20px;
 }
 
@@ -231,7 +238,7 @@ padding-left:inherit;
 }
 
 .btn-danger:hover{
-    background-color: rgba($danger, 10%);
+    background-color: lighten($danger, 10%);
     color: $secondary;
 }
 
@@ -354,8 +361,6 @@ and (max-width: 1250px)
     padding: 6px;
 }
 
-
-
 //cards for search results
 .fps-result{
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -370,7 +375,7 @@ and (max-width: 1250px)
 
 @keyframes background-fade-highlight {
     0% {
-        background-color: lighten($tertiary, 20%);
+        background-color: rgba($tertiary, .4);
     }
 
     100% {
