@@ -21,7 +21,7 @@
 
 //change category background color to white
 .topic-list.categories>tbody>tr{
-    background-color: rgba($secondary, 10%);
+    background-color: lighten($secondary, 10%);
 }
 
 //padding for category title and description
@@ -77,7 +77,7 @@ nav.post-controls button.create:hover {
 
 //Mark/unmark solution button on responses
 nav.post-controls button.accepted:hover, nav.post-controls button.unaccepted:hover {
-    background-color: rgba($success, 20%);
+    background-color: rgba($success, .4);
     color: $success;
     border-radius: 20px;
 }
