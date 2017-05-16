@@ -65,15 +65,8 @@
 }
 
 //New topic modal
-#reply-control:before {
-    background-color: rgba($primary, .2);
-    
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-
+#reply-control {
+    background-color: lighten($secondary, 20%);
 }
 
 //Reply button on responses
@@ -181,8 +174,7 @@ nav.post-controls button.d-hover {
 
     .avatar-flair {
       right: 4px;
-    }
-}
+    }}
 
 //improve format of embedded posts
 
@@ -221,8 +213,8 @@ nav.post-controls button.d-hover {
 }
 
 .d-header .icons .icon:hover {
-    color: lighten($header-primary, .4);
-    background-color: lighten($header-background, .4);
+    color: lighten($header-primary, 10%);
+    background-color: lighten($header-background, 10%);
     border-radius: 20px;
 }
 
