@@ -42,6 +42,10 @@
     text-align: left;
 }
 
+.topic-list th.btn {
+    color: #919191;
+}
+
 .topic-list .sortable:hover, .topic-list button.bulk-select:hover, .topic-list button.bulk-select i.fa:hover {
     background-color: lighten($secondary, 2%) !important;
     color: $highlight !important;
