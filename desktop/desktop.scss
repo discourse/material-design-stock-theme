@@ -42,7 +42,7 @@
     text-align: left;
 }
 
-.topic-list .sortable:hover {
+.topic-list .sortable:hover, .topic-list button.bulk-select:hover {
     background-color: lighten($secondary, 2%);
     color: $highlight;
 }
