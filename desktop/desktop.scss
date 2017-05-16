@@ -41,7 +41,6 @@ o//Shadows for categories
     border-top: none;
 }
 
-
 //underline navigation links
 .nav-pills>li.active>a, .nav-pills>li>a.active {
   color: $primary;
@@ -63,6 +62,11 @@ o//Shadows for categories
   a:hover:not(.active) i {
     color: $quaternary;
   }
+}
+
+//New topic modal
+#reply-control {
+    background-color: rgba($primary, .2);
 }
 
 //Reply button on responses
@@ -96,7 +100,7 @@ nav.post-controls button.delete:hover {
 
 //Other options on responses
 nav.post-controls button.d-hover {
-    background-color: rgba($secondary, .4);
+    background-color: $secondary;
     color: $quaternary;
     border-radius: 20px;
 }
