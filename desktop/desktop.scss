@@ -27,7 +27,7 @@
     background-color: lighten($secondary, 2%);
     border-radius: 2px;
 }
-
+ 
 //Suggested topics table
 .topics {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -43,8 +43,8 @@
 }
 
 .topic-list .sortable:hover, .topic-list button.bulk-select:hover {
-    background-color: lighten($secondary, 2%);
-    color: $highlight;
+    background-color: lighten($secondary, 2%) !important;
+    color: $highlight !important;
 }
 
 //padding for category title and description
