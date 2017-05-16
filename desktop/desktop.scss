@@ -39,7 +39,12 @@
 
 //topic list header cells
 .topic-list th {
-    text-align: left !important;
+    text-align: left;
+}
+
+.topic-list th:hover {
+    background-color: lighten($secondary, 2%);
+    color: $highlight;
 }
 
 //padding for category title and description
