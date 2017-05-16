@@ -42,7 +42,7 @@
     text-align: left;
 }
 
-.topic-list th:hover {
+.topic-list .sortable:hover {
     background-color: lighten($secondary, 2%);
     color: $highlight;
 }
