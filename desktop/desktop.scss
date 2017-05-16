@@ -19,6 +19,15 @@
       padding: 2px !important;
 }
 
+//topics table
+.topics {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: lighten($secondary, 2%);
+    border-radius: 2px;
+  }
+
 //change category background color to white
 .topic-list.categories>tbody>tr{
     background-color: lighten($secondary, 10%);
@@ -66,7 +75,7 @@
 
 //New topic modal
 #reply-control {
-    background-color: lighten($secondary, 20%);
+    background-color: lighten($secondary, 15%);
 }
 
 //Reply button on responses
@@ -151,8 +160,9 @@ nav.post-controls button.d-hover {
   background-color: lighten($secondary, 2%);
   margin-top: 10px;
   padding-left: 20px;
-  border-radius: 2px;
   padding-right: 20px;
+  border-radius: 2px;
+  border-top: none;  
 }
 
 //category badges
