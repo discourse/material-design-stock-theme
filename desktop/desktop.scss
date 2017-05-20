@@ -66,10 +66,6 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel
     background-color: lighten($secondary, 2%);
     border-radius: 2px;
 }
-
-.topic-list td {
-    color: $primary;
-}
  
 //Suggested topics table
 .topics {
@@ -83,10 +79,11 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel
 //topic list header cells
 .topic-list th {
     text-align: left;
+    color: $primary;
 }
 
 .topic-list th .btn {
-    color: #919191;
+    color: $primary;
 }
 
 .topic-list .sortable:hover, .topic-list button.bulk-select:hover, .topic-list button.bulk-select i.fa:hover {
