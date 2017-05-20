@@ -57,7 +57,7 @@
 .user-menu .notifications .read {
     background-color: lighten($secondary, 2%) !important;
 }
-div.menu-links-header a:hover, .user-menu .notifications .read:hover, .user-menu .menu-links li:hover {
+div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .notifications .read:hover, .user-menu .menu-links li:hover {
     background-color: rgba($highlight, .4) !important;
 }
 .menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover {
