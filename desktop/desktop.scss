@@ -9,7 +9,7 @@
       background-color: $secondary !important;
       color: $quaternary !important;
       border: none !important;
-      border-radius: 2px;
+      border-radius: 2px !important;
 }
 
 //change category and tag dropdowns
@@ -17,7 +17,7 @@
       background-color: lighten($secondary, 2%) !important;
       color: $quaternary !important;
       border: none !important;
-      border-radius: 2px;
+      border-radius: 2px !important;
       padding: 2px !important;
 }
 
@@ -28,6 +28,19 @@
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     background-color: lighten($secondary, 2%);
     border-radius: 2px;
+}
+
+//siteheader icons active
+.drop-down-visible .d-header .icons .active .icon {
+    background-color: lighten($secondary, 2%);
+    border: none;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+//make notifications dropdown background match
+.notifications {
+    background-color: lighten($secondary, 2%) !important;
 }
 
 //Main topics table
