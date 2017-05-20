@@ -54,7 +54,7 @@ ol.category-breadcrumb li:first-child {
     background-color: $highlight !important;
 }
 
-div.menu-links-header a:hover {
+div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover {
     background-color: $highlight !important;
 }
 
@@ -64,8 +64,11 @@ div.menu-links-header a:hover {
     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     background-color: lighten($secondary, 2%);
-    color: $primary;
     border-radius: 2px;
+}
+
+.topic-list td {
+    color: $primary;
 }
  
 //Suggested topics table
