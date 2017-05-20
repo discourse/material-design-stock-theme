@@ -80,8 +80,11 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     background-color: lighten($secondary, 2%);
     border-radius: 2px;
-    padding-bottom: 0px;
     margin-bottom: 15px;
+}
+
+#suggested-topics .topics {
+    padding-bottom: 0px;
 }
 
 //topic list header cells
