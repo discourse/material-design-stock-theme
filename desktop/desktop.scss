@@ -1,27 +1,26 @@
 //add space between categories
 .topic-list.categories {  
-      border-spacing: 0 1em;
-      border-collapse: separate;
+    border-spacing: 0 1em;
+    border-collapse: separate;
 }
 
 //change all categories and all tags
 .home {
-      background-color: $secondary !important;
-      color: $quaternary !important;
-      border: none !important;
-}
-
-ol.category-breadcrumb li:first-child {    
-      border-radius: 2px !important;
+    background-color: $secondary !important;
+    color: $quaternary !important;
+    border: none !important;
 }
 
 //change category and tag dropdowns
 .chooser {
-      background-color: lighten($secondary, 2%) !important;
-      color: $quaternary !important;
-      border: none !important;
-      border-radius: 2px !important;
-      padding: 2px !important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: lighten($secondary, 2%) !important;
+    color: $quaternary !important;
+    border: none !important;
+    border-radius: 2px !important;
+    padding: 2px !important;
 }
 
 //siteheader dropdowns
@@ -33,6 +32,16 @@ ol.category-breadcrumb li:first-child {
     border-radius: 2px;
 }
 
+//siteheader icons
+.d-header .icons > li {
+    margin-right: 5px;
+}
+.d-header .icons .icon:hover {
+    color: lighten($header-primary, 10%);
+    background-color: lighten($header-background, 10%);
+    border-radius: 20px;
+}
+
 //siteheader icons active
 .drop-down-visible .d-header .icons .active .icon {
     background-color: lighten($secondary, 2%);
@@ -40,7 +49,6 @@ ol.category-breadcrumb li:first-child {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
-
 .drop-down-visible .d-header .icons .active .icon:hover {
     border-radius: 50%;
 }
@@ -49,11 +57,9 @@ ol.category-breadcrumb li:first-child {
 .user-menu .notifications .read {
     background-color: lighten($secondary, 2%) !important;
 }
-
 .user-menu .notifications .read:hover {
     background-color: rgba($highlight, .4) !important;
 }
-
 div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover {
     background-color: rgba($highlight, .4) !important;
 }
@@ -81,11 +87,9 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel
     text-align: left;
     color: $primary;
 }
-
-.topic-list th .btn {
+.topic-list .sortable, .topic-list button.bulk-select, .topic-list button.bulk-select i.fa {
     color: $primary;
 }
-
 .topic-list .sortable:hover, .topic-list button.bulk-select:hover, .topic-list button.bulk-select i.fa:hover {
     background-color: lighten($secondary, 2%) !important;
     color: $highlight !important;
@@ -99,6 +103,17 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel
 //padding for category title and description
 .topic-list.categories th, .topic-list.categories td {
     padding: 0 15px 0 15px;
+}
+
+//category badges
+.badge-wrapper.box {
+      line-height: 2;
+      vertical-align: middle;
+      padding-bottom: 1px;
+      margin-top: 0;
+}
+.badge-category-bg {
+      border-radius: 2px;
 }
 
 //remove border at "Days Later" separation and the end of discussions
@@ -132,6 +147,13 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel
 //New topic modal
 #reply-control {
     background-color: lighten($secondary, 15%);
+}
+#reply-control .toggle-preview, #reply-control #draft-status, #reply-control #file-uploading {
+    bottom: 211px;
+}
+#reply-control .contents .submit-panel {
+    width: auto;
+    right: 35px;
 }
 
 //Reply button on responses
@@ -197,17 +219,6 @@ nav.post-controls button.d-hover {
   }
 }
 
-// //add shadow behind the list of topics, but not categories
-// .category-list, .topic-list:not(.categories){
-//   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-//   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-//   background-color: lighten($secondary, 2%);
-//   border-radius: 2px;
-//   border-collapse: collapse;
-// }
-
-
 //create conversation cards
 .topic-body{
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -219,17 +230,6 @@ nav.post-controls button.d-hover {
   padding-right: 20px;
   border-radius: 2px;
   border-top: none;  
-}
-
-//category badges
-.badge-wrapper.box {
-      line-height: 2;
-      vertical-align: middle;
-      padding-bottom: 1px;
-      margin-top: 0;
-}
-.badge-category-bg {
-      border-radius: 2px;
 }
 
 //more space for avatars
@@ -270,16 +270,6 @@ nav.post-controls button.d-hover {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-}
-
-.d-header .icons > li {
-    margin-right: 5px;
-}
-
-.d-header .icons .icon:hover {
-    color: lighten($header-primary, 10%);
-    background-color: lighten($header-background, 10%);
-    border-radius: 20px;
 }
 
 //properly space buttons on login modal
