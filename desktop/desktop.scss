@@ -149,7 +149,7 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel
     background-color: lighten($secondary, 15%);
 }
 #reply-control .toggle-preview, #reply-control #draft-status, #reply-control #file-uploading {
-    bottom: 211px;
+    bottom: 278px;
 }
 #reply-control .contents .submit-panel {
     width: auto;
@@ -331,7 +331,7 @@ padding-left:inherit;
 
 //New Topic Fab
 #create-topic.btn-default {
-    border-radius: 50%;
+    border-radius: 40px;
     position: fixed;
     bottom: 30px;
     right: 50px;
@@ -350,11 +350,9 @@ padding-left:inherit;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
-
 #create-topic.btn-default i {
     color: $header-primary;
 }
-
 #create-topic.btn-default:hover {
     text-indent: 0px;
     width: 190px;
@@ -366,7 +364,7 @@ padding-left:inherit;
 .timeline-footer-controls {
     position: relative;
 }
-.widget-button.btn.create {
+.widget-button .btn .create .no-text {
     border-radius: 50%;
     position: absolute;
     top: 50px;
@@ -385,13 +383,12 @@ padding-left:inherit;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
-.widget-button.btn.create:hover {
+.widget-button .btn .create .no-text:hover {
     background-color: darken($quaternary, 2%);
     color: $header-primary;
 }
-
 //Center and increase size of reply icon
-.widget-button.btn.create .fa-reply{
+.widget-button .btn .create .fa-reply{
     color: $header-primary;
     font-size: 20px;
     margin-left: -8px;
