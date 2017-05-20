@@ -9,6 +9,9 @@
       background-color: $secondary !important;
       color: $quaternary !important;
       border: none !important;
+}
+
+ol.category-breadcrumb:first-child {    
       border-radius: 2px !important;
 }
 
@@ -39,8 +42,12 @@
 }
 
 //make notifications dropdown background match
-.notifications {
+.user-menu .notifications .read {
     background-color: lighten($secondary, 2%) !important;
+}
+
+.user-menu .notifications .read:hover {
+    background-color: $highlight;
 }
 
 //Main topics table
@@ -49,6 +56,7 @@
     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     background-color: lighten($secondary, 2%);
+    color: $primary;
     border-radius: 2px;
 }
  
@@ -85,12 +93,12 @@
     padding: 0 15px 0 15px;
 }
 
-//Shadows for categories
-.topic-list.categories>tbody>tr td.category, .topic-list.categories>tbody>tr td.stats, .topic-list.categories>tbody>tr td.latest{  
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
-}
+// //Shadows for categories
+// .topic-list.categories>tbody>tr td.category, .topic-list.categories>tbody>tr td.stats, .topic-list.categories>tbody>tr td.latest{  
+//   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+//   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+// }
 
 //remove border at "Days Later" separation and the end of discussions
 .topic-status-info, .small-action {
