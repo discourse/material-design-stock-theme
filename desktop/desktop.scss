@@ -56,7 +56,7 @@
 
 //make notifications dropdown background match
 .user-menu .notifications .read {
-    background-color: lighten($secondary, 2%) !important;
+    background-color: lighten($secondary, 5%) !important;
 }
 div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .notifications .read:hover, .user-menu .menu-links li:hover {
     background-color: rgba($highlight, .4) !important;
