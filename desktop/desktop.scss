@@ -11,7 +11,7 @@
       border: none !important;
 }
 
-ol.category-breadcrumb:first-child {    
+ol.category-breadcrumb li:first-child {    
       border-radius: 2px !important;
 }
 
@@ -41,13 +41,21 @@ ol.category-breadcrumb:first-child {
     border-top-right-radius: 2px;
 }
 
+.drop-down-visible .d-header .icons .active .icon:hover {
+    border-radius: 50%;
+}
+
 //make notifications dropdown background match
 .user-menu .notifications .read {
     background-color: lighten($secondary, 2%) !important;
 }
 
 .user-menu .notifications .read:hover {
-    background-color: $highlight;
+    background-color: $highlight !important;
+}
+
+div.menu-links-header a:hover {
+    background-color: $highlight !important;
 }
 
 //Main topics table
