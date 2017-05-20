@@ -57,11 +57,11 @@
 .user-menu .notifications .read {
     background-color: lighten($secondary, 2%) !important;
 }
-.user-menu .notifications .read:hover {
+.user-menu .notifications .read:hover, .user-menu .menu-links li:hover {
     background-color: rgba($highlight, .4) !important;
 }
 div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover {
-    background-color: rgba($highlight, .4) !important;
+    background-color: transparent !important;
 }
 
 //Main topics table
@@ -364,7 +364,7 @@ padding-left:inherit;
 .timeline-footer-controls {
     position: relative;
 }
-.widget-button .btn .create .no-text {
+.widget-button.btn.create.no-text {
     border-radius: 50%;
     position: absolute;
     top: 50px;
@@ -383,12 +383,12 @@ padding-left:inherit;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
-.widget-button .btn .create .no-text:hover {
+.widget-button.btn.create.no-text:hover {
     background-color: darken($quaternary, 2%);
     color: $header-primary;
 }
 //Center and increase size of reply icon
-.widget-button .btn .create .fa-reply{
+.widget-button.btn.create.fa-reply{
     color: $header-primary;
     font-size: 20px;
     margin-left: -8px;
