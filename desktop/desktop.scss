@@ -388,7 +388,7 @@ padding-left:inherit;
     color: $header-primary;
 }
 //Center and increase size of reply icon
-.widget-button.btn.create.fa-reply{
+.widget-button.btn.create .fa-reply{
     color: $header-primary;
     font-size: 20px;
     margin-left: -8px;
