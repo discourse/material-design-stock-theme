@@ -51,11 +51,11 @@ ol.category-breadcrumb li:first-child {
 }
 
 .user-menu .notifications .read:hover {
-    background-color: $highlight !important;
+    background-color: rgba($highlight, .4) !important;
 }
 
 div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover {
-    background-color: $highlight !important;
+    background-color: rgba($highlight, .4) !important;
 }
 
 //Main topics table
@@ -101,13 +101,6 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li a:hover, .menu-panel
     padding: 0 15px 0 15px;
 }
 
-// //Shadows for categories
-// .topic-list.categories>tbody>tr td.category, .topic-list.categories>tbody>tr td.stats, .topic-list.categories>tbody>tr td.latest{  
-//   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
-//   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
-//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
-// }
-
 //remove border at "Days Later" separation and the end of discussions
 .topic-status-info, .small-action {
     border-top: none;
@@ -147,7 +140,7 @@ nav.post-controls button.create:hover {
     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     background-color: $quaternary;
-    color: $primary;
+    color: $header-primary;
     border-radius: 2px;
 }
 
@@ -204,15 +197,15 @@ nav.post-controls button.d-hover {
   }
 }
 
-//add shadow behind the list of topics, but not categories
-.category-list, .topic-list:not(.categories){
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  background-color: lighten($secondary, 2%);
-  border-radius: 2px;
-  border-collapse: collapse;
-}
+// //add shadow behind the list of topics, but not categories
+// .category-list, .topic-list:not(.categories){
+//   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+//   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+//   background-color: lighten($secondary, 2%);
+//   border-radius: 2px;
+//   border-collapse: collapse;
+// }
 
 
 //create conversation cards
@@ -235,7 +228,6 @@ nav.post-controls button.d-hover {
       padding-bottom: 1px;
       margin-top: 0;
 }
-
 .badge-category-bg {
       border-radius: 2px;
 }
@@ -250,7 +242,6 @@ nav.post-controls button.d-hover {
     }}
 
 //improve format of embedded posts
-
 .embedded-posts .topic-avatar{
     padding-left: 0px;
 }
@@ -350,7 +341,7 @@ padding-left:inherit;
 
 //New Topic Fab
 #create-topic.btn-default {
-    border-radius: 40px;
+    border-radius: 50%;
     position: fixed;
     bottom: 30px;
     right: 50px;
@@ -386,7 +377,7 @@ padding-left:inherit;
     position: relative;
 }
 .widget-button.btn.create {
-    border-radius: 40px;
+    border-radius: 50%;
     position: absolute;
     top: 50px;
     left: -18px;
@@ -403,6 +394,10 @@ padding-left:inherit;
     height: 56px;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
+}
+.widget-button.btn.create:hover {
+    background-color: darken($quaternary, 2%);
+    color: $header-primary;
 }
 
 //Center and increase size of reply icon
