@@ -5,8 +5,8 @@
 }
 
 //change all categories and all tags
-.no-category .home {
-    background-color: $secondary !important;
+.home {
+    background-color: transparent !important;
     color: $quaternary !important;
     border: none !important;
 }
@@ -30,6 +30,7 @@
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     background-color: lighten($secondary, 2%);
     border-radius: 2px;
+    border: none;
 }
 
 //siteheader icons
