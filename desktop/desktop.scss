@@ -241,7 +241,7 @@ and (max-width: 1250px)
     }
 
     100% {
-        background-color: $secondary;
+        background-color: lighten($secondary, 10%);
     }
 }
 
