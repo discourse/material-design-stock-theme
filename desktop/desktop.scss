@@ -159,8 +159,15 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     padding-left: 0px;
     padding-top: 0px;
 }
-#reply-control > .contents > .control, #reply-control > .contents > .control-row {
+#reply-control .contents .control{
     height: 100%;
+    width: 80%;
+    margin: auto;
+}
+#reply-control .contents .control-row {
+    height: 100%;
+    max-width: 1450px;
+    margin: auto;
 }
 #reply-control .contents .composer-bottom-right {
     position: relative;
@@ -178,6 +185,7 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
 }
 #reply-control .contents .composer-bottom-right .draft-status {
     margin-left: 49%;
+    right: auto;
 }
 #reply-control .contents .submit-panel {
     right: auto;
@@ -186,13 +194,15 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
 }
 #reply-control .contents .submit-panel .tag-chooser {
     float: left;
+    width: 50%;
 }
 #reply-control .contents .submit-panel .cancel {
-    margin-top: 5px;
-}
-#reply-control .contents .submit-panel .cancel, #reply-control .contents .submit-panel .create {
+    margin-top: 12px;
     float: right;
-    margin-left: 10px;
+}
+#reply-control .contents .submit-panel .create {
+    float: right;
+    margin: 7px 0 0 10px;
 }
 
 //Reply button on responses
