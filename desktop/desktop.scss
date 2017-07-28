@@ -188,6 +188,9 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     right: auto;
 }
 #reply-control .contents .submit-panel {
+    margin-bottom: 5px;
+}
+#reply-control .contents .submit-panel {
     right: auto;
     display: inline-block;
     width: 100%;
@@ -195,7 +198,8 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
 }
 #reply-control .contents .submit-panel .tag-chooser {
     float: left;
-    width: 50%;
+    width: 50% !important;
+    margin: auto;
 }
 #reply-control .contents .submit-panel .cancel {
     margin-top: 12px;
