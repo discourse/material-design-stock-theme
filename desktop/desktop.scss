@@ -156,13 +156,26 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
 }
 #reply-control > .contents {
     height: calc(100% - 11px);
+    padding-left: 0px;
+    padding-top: 0px;
 }
-#reply-control .toggle-preview, #reply-control #draft-status, #reply-control #file-uploading {
-    bottom: 278px;
+#reply-control > .contents > .control, #reply-control > .contents > .control-row {
+    height: 100%;
 }
-#reply-control .contents .submit-panel {
-    width: auto;
-    right: 35px;
+#reply-control > .contents > .submit-panel {
+    right: auto;
+    display: inline-block;
+    width: 100%;
+}
+#reply-control > .contents > .submit-panel > .tag-chooser {
+    float: left;
+}
+#reply-control > .contents > .submit-panel > .cancel {
+    margin-top: 5px;
+}
+#reply-control > .contents > .submit-panel > .cancel, #reply-control > .contents > .submit-panel > .create {
+    float: right;
+    margin-left: 10px;
 }
 
 //Reply button on responses
