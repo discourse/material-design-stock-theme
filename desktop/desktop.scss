@@ -178,12 +178,12 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     float: right;
 }
 #reply-control .contents .composer-bottom-right .toggle-preview,
-#reply-control .contents .composer-bottom-right .draft-status {
+#reply-control .contents .composer-bottom-right #draft-status {
     position: relative;
     bottom: auto;
-    margin-top: 0px;
+    margin-top: 10px;
 }
-#reply-control .contents .composer-bottom-right .draft-status {
+#reply-control .contents .composer-bottom-right #draft-status {
     margin-left: 49%;
     right: auto;
 }
@@ -191,6 +191,7 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     right: auto;
     display: inline-block;
     width: 100%;
+    max-width: 1450px;
 }
 #reply-control .contents .submit-panel .tag-chooser {
     float: left;
