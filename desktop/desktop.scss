@@ -154,6 +154,9 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
 #reply-control {
     background-color: lighten($secondary, 15%);
 }
+#reply-control {
+    height: calc(100% - 11px);
+}
 #reply-control .toggle-preview, #reply-control #draft-status, #reply-control #file-uploading {
     bottom: 278px;
 }
