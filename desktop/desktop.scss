@@ -182,9 +182,9 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     }
 }
 #reply-control .contents .composer-bottom-right {
-    position: relative;
+    position: absolute;
     width: 100%;
-    bottom: 335px;
+    bottom: 310px;
 }
 #reply-control .contents .composer-bottom-right .toggle-preview {
     float: right;
@@ -193,11 +193,12 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
 #reply-control .contents .composer-bottom-right #draft-status {
     position: relative;
     bottom: auto;
-    margin-top: 10px;
 }
 #reply-control .contents .composer-bottom-right #draft-status {
-    margin-left: 49%;
+    width: 35px;
+    margin: auto;
     right: auto;
+    left: auto;
 }
 #reply-control .contents .submit-panel {
     width: calc(100% - 60px);
