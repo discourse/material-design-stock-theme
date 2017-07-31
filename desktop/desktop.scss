@@ -173,7 +173,7 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     right: 30px;
     position: absolute;
 }
-@all and (min-width: 1550px) {
+@media all and (min-width: 1550px) {
     #reply-control .contents .composer-fields,
     #reply-control .contents .submit-panel {
         width: 1450px;
