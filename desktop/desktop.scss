@@ -168,6 +168,17 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     height: 100%;
     max-width: 1450px;
     margin: auto;
+    padding: 0px;
+}
+#reply-control .contents .composer-fields,
+#reply-control .contents .submit-panel {
+    @all and (min-width: 1550px) {
+        width: 1450px;
+        left: auto;
+        right: auto;
+    }
+    left: 30px;
+    right: 30px;
 }
 #reply-control .contents .composer-bottom-right {
     position: relative;
@@ -188,13 +199,11 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     right: auto;
 }
 #reply-control .contents .submit-panel {
-    margin-bottom: 5px;
-}
-#reply-control .contents .submit-panel {
     right: auto;
     display: inline-block;
     width: 100%;
     max-width: 1450px;
+    margin-bottom: 5px;
 }
 #reply-control .contents .submit-panel .tag-chooser {
     float: left;
