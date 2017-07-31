@@ -167,6 +167,12 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     max-width: 1450px;
     padding: 0px;
 }
+#reply-control .contents .composer-fields,
+#reply-control .contents .submit-panel {
+    left: 30px;
+    right: 30px;
+    position: absolute;
+}
 @all and (min-width: 1550px) {
     #reply-control .contents .composer-fields,
     #reply-control .contents .submit-panel {
@@ -174,12 +180,6 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
         left: auto;
         right: auto;
     }
-}
-#reply-control .contents .composer-fields,
-#reply-control .contents .submit-panel {
-    left: 30px;
-    right: 30px;
-    position: absolute;
 }
 #reply-control .contents .composer-bottom-right {
     position: relative;
@@ -200,10 +200,7 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     right: auto;
 }
 #reply-control .contents .submit-panel {
-    left:auto;
-    right: auto;
     display: inline-block;
-    width: 100%;
     max-width: 1450px;
     margin-bottom: 5px;
 }
