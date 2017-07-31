@@ -170,11 +170,6 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     margin: auto;
     padding: 0px;
 }
-#reply-control .contents .composer-fields,
-#reply-control .contents .submit-panel {
-    left: 30px;
-    right: 30px;
-}
 @all and (min-width: 1550px) {
     #reply-control .contents .composer-fields,
     #reply-control .contents .submit-panel {
@@ -182,6 +177,11 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
         left: auto;
         right: auto;
     }
+}
+#reply-control .contents .composer-fields,
+#reply-control .contents .submit-panel {
+    left: 30px;
+    right: 30px;
 }
 #reply-control .contents .composer-bottom-right {
     position: relative;
