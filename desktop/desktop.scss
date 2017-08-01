@@ -181,12 +181,12 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
         right: auto;
     }
 }
-.edit-title .open #reply-control .contents .composer-bottom-right {
+#reply-control.edit-title .contents .composer-bottom-right {
     position: absolute;
     width: 100%;
     bottom: 310px;
 }
-.open #reply-control .contents .composer-bottom-right {
+#reply-control.open .contents .composer-bottom-right {
     position: absolute;
     width: 100%;
     bottom: 210px;
