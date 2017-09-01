@@ -237,7 +237,7 @@ button#new-account-link {
     background-color: lighten($tertiary, 20%);
   }
   100% {
-    background-color: $secondary;
+    background-color: lighten($secondary, 10%);
   }
 }
 
