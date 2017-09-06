@@ -1,5 +1,5 @@
 //add space between categories
-.topic-list.categories {  
+.topic-list.categories {
     border-spacing: 0 1em;
     border-collapse: separate;
 }
@@ -13,9 +13,9 @@
 
 //change category and tag dropdowns
 .chooser {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-color: lighten($secondary, 5%) !important;
     color: $quaternary !important;
     border: none !important;
@@ -25,18 +25,19 @@
 
 //siteheader dropdowns
 .menu-panel.drop-down {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-color: lighten($secondary, 5%);
     border-radius: 2px;
     border: none;
 }
 
 //siteheader icons
-.d-header .icons > li {
+.d-header .icons>li {
     margin-right: 5px;
 }
+
 .d-header .icons .icon:hover {
     color: lighten($header-primary, 10%);
     background-color: lighten($header-background, 10%);
@@ -50,6 +51,7 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
+
 .drop-down-visible .d-header .icons .active .icon:hover {
     border-radius: 50%;
 }
@@ -58,27 +60,33 @@
 .user-menu .notifications .read {
     background-color: lighten($secondary, 5%) !important;
 }
-div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .notifications .read:hover, .user-menu .menu-links li:hover {
+
+div.menu-links-header a:hover,
+.menu-panel ul.menu-links li:hover,
+.user-menu .notifications .read:hover,
+.user-menu .menu-links li:hover {
     background-color: rgba($highlight, .4) !important;
 }
-.menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover {
+
+.menu-panel ul.menu-links li a:hover,
+.menu-panel ul li.heading a:hover {
     background-color: transparent !important;
 }
 
 //Main topics table
 .list-container .contents {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-color: lighten($secondary, 2%);
     border-radius: 2px;
 }
- 
+
 //Suggested topics table
 .topics {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-color: lighten($secondary, 2%);
     border-radius: 2px;
     margin-bottom: 15px;
@@ -93,86 +101,101 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
     text-align: left;
     color: $primary;
 }
-.topic-list .sortable, .topic-list button.bulk-select, .topic-list button.bulk-select i.fa {
+
+.topic-list .sortable,
+.topic-list button.bulk-select,
+.topic-list button.bulk-select i.fa {
     color: $primary;
 }
-.topic-list .sortable:hover, .topic-list button.bulk-select:hover, .topic-list button.bulk-select i.fa:hover {
+
+.topic-list .sortable:hover,
+.topic-list button.bulk-select:hover,
+.topic-list button.bulk-select i.fa:hover {
     background-color: lighten($secondary, 2%) !important;
     color: $highlight !important;
 }
 
 //no border on the last table row
-.topic-list > tbody > tr:last-child {
+.topic-list>tbody>tr:last-child {
     border-bottom: none;
 }
 
 //padding for category title and description
-.topic-list.categories th, .topic-list.categories td {
+.topic-list.categories th,
+.topic-list.categories td {
     padding: 0 15px 0 15px;
 }
 
 //category badges
 .badge-wrapper.box {
-      line-height: 2;
-      vertical-align: middle;
-      padding-bottom: 1px;
-      margin-top: 0;
+    line-height: 2;
+    vertical-align: middle;
+    padding-bottom: 1px;
+    margin-top: 0;
 }
+
 .badge-category-bg {
-      border-radius: 2px;
+    border-radius: 2px;
 }
 
 //remove border at "Days Later" separation and the end of discussions
-.topic-status-info, .small-action {
+.topic-status-info,
+.small-action {
     border-top: none;
 }
 
 //underline navigation links
-.nav-pills>li.active>a, .nav-pills>li>a.active {
-  color: $primary;
-  font-weight: 500;
-  background-color: $secondary;
-  border-bottom: 3px solid $tertiary;
+.nav-pills>li.active>a,
+.nav-pills>li>a.active {
+    color: $primary;
+    font-weight: 500;
+    background-color: $secondary;
+    border-bottom: 3px solid $tertiary;
 }
 
 //remove highlighting navigation background on hover
-.nav-pills > li > a:hover{
-  background-color: $secondary;
+.nav-pills>li>a:hover {
+    background-color: $secondary;
 }
 
 //fix color of user profile navigation icons
 .user-main .nav-pills {
-  a.active i {
-    color: $primary;
-  }
-  a:hover:not(.active) i {
-    color: $quaternary;
-  }
+    a.active i {
+        color: $primary;
+    }
+    a:hover:not(.active) i {
+        color: $quaternary;
+    }
 }
 
 //New topic modal
 #reply-control {
     background-color: lighten($secondary, 15%);
 }
-#reply-control > .contents {
+
+#reply-control>.contents {
     height: calc(100% - 11px);
     padding-left: 0px;
     padding-top: 0px;
 }
-#reply-control .contents .control{
+
+#reply-control .contents .control {
     height: 100%;
 }
+
 #reply-control .contents .control-row {
     height: 100%;
     max-width: 1450px;
     padding: 0px;
 }
+
 #reply-control .contents .composer-fields,
 #reply-control .contents .submit-panel {
     left: 30px;
     right: 30px;
     position: absolute;
 }
+
 @media all and (min-width: 1550px) {
     #reply-control .contents .composer-fields,
     #reply-control .contents .submit-panel {
@@ -181,45 +204,54 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
         right: auto;
     }
 }
+
 #reply-control.edit-title.open .contents .composer-bottom-right {
     position: absolute;
     width: 100%;
     bottom: 310px;
 }
+
 #reply-control.open .contents .composer-bottom-right {
     position: absolute;
     width: 100%;
     bottom: 210px;
 }
+
 #reply-control .contents .composer-bottom-right .toggle-preview {
     float: right;
 }
+
 #reply-control .contents .composer-bottom-right .toggle-preview,
 #reply-control .contents .composer-bottom-right #draft-status {
     position: relative;
     bottom: auto;
 }
+
 #reply-control .contents .composer-bottom-right #draft-status {
     width: 35px;
     margin: auto;
     right: auto;
     left: auto;
 }
+
 #reply-control .contents .submit-panel {
     width: calc(100% - 60px);
     display: inline-block;
     max-width: 1450px;
     margin-bottom: 5px;
 }
+
 #reply-control .contents .submit-panel .tag-chooser {
     float: left;
     width: 50% !important;
     margin: auto;
 }
+
 #reply-control .contents .submit-panel .cancel {
     margin-top: 12px;
     float: right;
 }
+
 #reply-control .contents .submit-panel .create {
     float: right;
     margin: 7px 0 0 10px;
@@ -227,16 +259,17 @@ div.menu-links-header a:hover, .menu-panel ul.menu-links li:hover, .user-menu .n
 
 //Reply button on responses
 nav.post-controls button.create:hover {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-color: $quaternary;
     color: $header-primary;
     border-radius: 2px;
 }
 
 //Mark/unmark solution button on responses
-nav.post-controls button.accepted:hover, nav.post-controls button.unaccepted:hover {
+nav.post-controls button.accepted:hover,
+nav.post-controls button.unaccepted:hover {
     background-color: rgba($success, .4);
     color: $success;
     border-radius: 20px;
@@ -274,60 +307,60 @@ nav.post-controls button.d-hover {
     border-color: $tertiary;
 }
 
-.admin-controls .nav.nav-pills > li > a:hover,
-.admin-controls .nav.nav-pills li.active a:hover{
+.admin-controls .nav.nav-pills>li>a:hover,
+.admin-controls .nav.nav-pills li.active a:hover {
     background-color: rgba($secondary, .4);
 }
 
 .admin-controls .nav-pills {
-  a.active i {
-    color: $tertiary;
-  }
-  a:hover:not(.active) i {
-    color: $quaternary;
-  }
+    a.active i {
+        color: $tertiary;
+    }
+    a:hover:not(.active) i {
+        color: $quaternary;
+    }
 }
 
 //create conversation cards
-.topic-body{
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  background-color: lighten($secondary, 2%);
-  margin-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 2px;
-  border-top: none;  
+.topic-body {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: lighten($secondary, 2%);
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+    border-top: none;
 }
 
 //more space for avatars
-.topic-avatar{
+.topic-avatar {
     border-top: 0;
     padding-right: 10px;
-
     .avatar-flair {
-      right: 4px;
-    }}
+        right: 4px;
+    }
+}
 
 //improve format of embedded posts
-.embedded-posts .topic-avatar{
+.embedded-posts .topic-avatar {
     padding-left: 0px;
 }
+
 .embedded-posts.top.topic-body {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
     background-color: $secondary;
 }
-
 
 //raise and round buttons
 .btn:not(.bulk-select) {
     border-radius: 2px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 //flatten editor, topic-map, more badges, and revision view buttons
@@ -336,34 +369,35 @@ nav.post-controls button.d-hover {
 .badge-section .btn,
 #revision .btn {
     border-radius: 0px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
 }
 
 //properly space buttons on login modal
-button#login-link, button#new-account-link{
-padding-left:inherit;
+button#login-link,
+button#new-account-link {
+    padding-left: inherit;
 }
 
 //darken color, remove shadow and border when pressed
-.btn:active{
-    background-color: rgba(0,0,0,.4);
-    -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 0px 00px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 0px 00px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 0px 00px 0 rgba(0,0,0,0.12);
-    
+.btn:active {
+    background-color: rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
 }
-.btn:focus{
+
+.btn:focus {
     outline: -webkit-focus-ring-color auto 0px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: $quaternary;
     color: $header-primary;
 }
 
-.btn-danger:hover{
+.btn-danger:hover {
     background-color: lighten($danger, 10%);
     color: $secondary;
 }
@@ -397,7 +431,6 @@ padding-left:inherit;
     color: $success;
 }
 
-
 //New Topic Fab
 #create-topic.btn-default {
     border-radius: 40px;
@@ -406,22 +439,24 @@ padding-left:inherit;
     right: 50px;
     z-index: 999;
     padding: 20px 2px 20px;
-    background-color: $quaternary; 
+    background-color: $quaternary;
     color: $quaternary;
     white-space: nowrap;
     text-indent: 10px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     overflow: hidden;
     width: 56px;
     height: 56px;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
+
 #create-topic.btn-default i {
     color: $header-primary;
 }
+
 #create-topic.btn-default:hover {
     text-indent: 0px;
     width: 190px;
@@ -437,6 +472,7 @@ padding-left:inherit;
 .timeline-footer-controls {
     position: relative;
 }
+
 .widget-button.btn.create.no-text {
     border-radius: 50%;
     position: absolute;
@@ -447,44 +483,40 @@ padding-left:inherit;
     background-color: $quaternary;
     color: $header-primary;
     text-indent: 10px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     overflow: hidden;
     width: 56px;
     height: 56px;
     -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
     transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
+
 .widget-button.btn.create.no-text:hover {
     background-color: darken($quaternary, 2%);
     color: $header-primary;
 }
+
 //Center and increase size of reply icon
-.widget-button.btn.create .fa-reply{
+.widget-button.btn.create .fa-reply {
     color: $header-primary;
     font-size: 20px;
     margin-left: -8px;
 }
 
-
 //Proper spacing for iPad portrait
-@media only screen 
-and (min-width : 768px)
-and (max-width: 1250px)
-{
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
     .timeline-container {
         margin-left: 820px;
     }
-    .topic-admin-popup-menu{
-        left:-40% !important;
-        
+    .topic-admin-popup-menu {
+        left: -40% !important;
     }
-
 }
 
 //Properly space notifications button
-.widget-button.btn.notifications-dropdown{
+.widget-button.btn.notifications-dropdown {
     right: 4px;
     position: relative;
     border-radius: 40px;
@@ -493,22 +525,20 @@ and (max-width: 1250px)
 }
 
 //cards for search results
-.fps-result{
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  background-color: lighten($secondary, 10%);
-  margin-top: 10px;
-  padding: 20px;
-  border-radius: 2px;
+.fps-result {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: lighten($secondary, 10%);
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 2px;
 }
-
 
 @keyframes background-fade-highlight {
     0% {
         background-color: rgba($tertiary, .4);
     }
-
     100% {
         background-color: $secondary;
     }
@@ -518,74 +548,62 @@ and (max-width: 1250px)
     border-top: none;
 }
 
-
-
 // RTL Overrides
 .rtl {
-      
-  .widget-button.btn.notifications-dropdown .fa {
-     margin-left: -2px;
-  }
-      
-  .topic-avatar {
-    padding-right: initial;
-    padding-left: 10px;
-    .avatar-flair {
-      right: initial;
-      left: 4px;
+    .widget-button.btn.notifications-dropdown .fa {
+        margin-left: -2px;
     }
-  }
-
-  .embedded-posts .topic-avatar {
-    padding-left: initial;
-    padding-right: 0;
-  }
-
-  button#login-link, button#new-account-link {
-    padding-left: initial;
-    padding-right: inherit;
-  }
-
-  #create-topic.btn-default {
-    right: initial;
-    left: 50px;
-    padding: 20px 2px 20px;
-  }
-
-  .widget-button.btn.create {
-    left: initial;
-    right: -18px;
-    padding: 24px 5px 22px 20px;
-  }
-
-  .widget-button.btn.create .fa-reply {
-    margin-left: initial;
-    margin-right: -8px;
-  }
-
-  .widget-button.btn.notifications-dropdown {
-    right: initial;
-    left: 4px;
-  }
-
-  .widget-button.btn.notifications-dropdown .fa {
-    margin-left: initial;
-    margin-right: -2px;
-  }
+    .topic-avatar {
+        padding-right: initial;
+        padding-left: 10px;
+        .avatar-flair {
+            right: initial;
+            left: 4px;
+        }
+    }
+    .embedded-posts .topic-avatar {
+        padding-left: initial;
+        padding-right: 0;
+    }
+    button#login-link,
+    button#new-account-link {
+        padding-left: initial;
+        padding-right: inherit;
+    }
+    #create-topic.btn-default {
+        right: initial;
+        left: 50px;
+        padding: 20px 2px 20px;
+    }
+    .widget-button.btn.create {
+        left: initial;
+        right: -18px;
+        padding: 24px 5px 22px 20px;
+    }
+    .widget-button.btn.create .fa-reply {
+        margin-left: initial;
+        margin-right: -8px;
+    }
+    .widget-button.btn.notifications-dropdown {
+        right: initial;
+        left: 4px;
+    }
+    .widget-button.btn.notifications-dropdown .fa {
+        margin-left: initial;
+        margin-right: -2px;
+    }
 }
 
 // RTL Overrides
-@media only screen
-and (min-width : 768px)
-and (max-width: 1250px) {
-  .rtl {
-    .timeline-container {
-      margin-left: initial;
-      margin-right: 820px;
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+    .rtl {
+        .timeline-container {
+            margin-left: initial;
+            margin-right: 820px;
+        }
+        .topic-admin-popup-menu {
+            left: initial !important;
+            right: -40% !important;
+        }
     }
-    .topic-admin-popup-menu {
-      left: initial !important;
-      right:-40% !important;
-    }
-  }
 }
