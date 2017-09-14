@@ -144,6 +144,15 @@ div.menu-links-header a:hover,
     border-top: none;
 }
 
+//Shadows for categories
+.topic-list.categories>tbody>tr td.category,
+.topic-list.categories>tbody>tr td.stats,
+.topic-list.categories>tbody>tr td.latest {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+}
+
 //underline navigation links
 .nav-pills>li.active>a,
 .nav-pills>li>a.active {
