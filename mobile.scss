@@ -1,0 +1,45 @@
+//create conversation cards
+.topic-body{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  background-color: lighten($secondary, 10%);
+  margin-top: 10px;
+  padding-left: 20px;
+  border-radius: 2px;
+  padding-right: 20px;
+}
+
+//more space for avatars
+.topic-avatar {
+    border-top: 0;
+    padding-right: 10px;
+}
+
+//improve format of embedded posts
+
+.embedded-posts .topic-avatar {
+    padding-left: 0px;
+}
+.embedded-posts.top.topic-body {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
+    background-color: $secondary;
+}
+.small-action {
+    border: none;
+}
+#topic-closing-info {
+    border: none;
+}
+//remove lines between cards
+.topic-post article {
+    border: none;
+}
+//put shadow on quotes as well
+aside.quote {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
