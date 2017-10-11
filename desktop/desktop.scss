@@ -1,21 +1,24 @@
 //add space between categories
-.topic-list.categories{  
-      border-spacing: 0 1em;
-      border-collapse: separate;
+.topic-list.categories {
+  border-spacing: 0 1em;
+  border-collapse: separate;
 }
 
 //change category background color to white
-.topic-list.categories>tbody>tr{
-    background-color: lighten($secondary, 10%);
+.topic-list.categories>tbody>tr {
+  background-color: lighten($secondary, 10%);
 }
 
 //padding for category title and description
-.topic-list.categories th, .topic-list.categories td {
-    padding: 0 15px 0 15px;
+.topic-list.categories th,
+.topic-list.categories td {
+  padding: 0 15px 0 15px;
 }
 
 //Shadows for categories
-.topic-list.categories>tbody>tr td.category, .topic-list.categories>tbody>tr td.stats, .topic-list.categories>tbody>tr td.latest{  
+.topic-list.categories>tbody>tr td.category,
+.topic-list.categories>tbody>tr td.stats,
+.topic-list.categories>tbody>tr td.latest {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
@@ -24,7 +27,9 @@
 //add shadow behind the list of topics on right in Category and Latest View
 //add shadow behind list of categories on left in Category and Latest View
 //add shadow behind topics in Latest view
-.category-list, .topic-list:not(.categories), .latest-topic-list{
+.category-list, 
+.topic-list:not(.categories), 
+.latest-topic-list{
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -32,9 +37,9 @@
   border-collapse: collapse;
   }
 
-
 //underline navigation links
-.nav-pills>li.active>a, .nav-pills>li>a.active {
+.nav-pills>li.active>a,
+.nav-pills>li>a.active {
   color: $primary;
   font-weight: 500;
   background-color: $secondary;
@@ -42,7 +47,7 @@
 }
 
 //remove highlighting navigation background on hover
-.nav-pills > li > a:hover{
+.nav-pills>li>a:hover {
   background-color: $secondary;
 }
 
@@ -56,12 +61,11 @@
   }
 }
 
-
 //create conversation cards
-.topic-body{
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+.topic-body {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
   padding-left: 20px;
@@ -70,34 +74,37 @@
 }
 
 //more space for avatars
-.topic-avatar{
-    border-top: 0;
-    padding-right: 10px;
+.topic-avatar {
+  border-top: 0;
+  padding-right: 10px;
+  .avatar-flair {
+    right: 4px;
+  }
+}
 
-    .avatar-flair {
-      right: 4px;
-    }
+//remove stray border from bottom of last post
+.topic-status-info {
+  border-top: 0;
 }
 
 //improve format of embedded posts
-
-.embedded-posts .topic-avatar{
-    padding-left: 0px;
+.embedded-posts .topic-avatar {
+  padding-left: 0px;
 }
+
 .embedded-posts.top.topic-body {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    background-color: $secondary;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+  background-color: $secondary;
 }
-
 
 //raise and round buttons
 .btn:not(.bulk-select) {
-    border-radius: 2px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 //flatten editor, topic-map, more badges, and revision view buttons
@@ -105,161 +112,147 @@
 .topic-map .btn.no-text,
 .badge-section .btn,
 #revision .btn {
-    border-radius: 0px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
 }
 
 //properly space buttons on login modal
-button#login-link, button#new-account-link{
-padding-left:inherit;
+button#login-link,
+button#new-account-link {
+  padding-left: inherit;
 }
 
 //darken color, remove shadow and border when pressed
-.btn:active{
-    background-color: rgba(0,0,0,.4);
-    -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 0px 00px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 0px 00px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16),0 0px 00px 0 rgba(0,0,0,0.12);
-    
+.btn:active {
+  background-color: rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
 }
-.btn:focus{
-    outline: -webkit-focus-ring-color auto 0px;
+
+.btn:focus {
+  outline: -webkit-focus-ring-color auto 0px;
 }
 
 //shift "more" button slightly left
 .more-topics .btn {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
 
 //New Topic Fab
 #create-topic.btn-default {
-    border-radius: 40px;
-    position: fixed;
-    bottom: 30px;
-    right: 50px;
-    z-index: 999;
-    padding: 24px 20px 22px 5px;
-    background-color: $tertiary; 
-    color: $tertiary; 
-    white-space: nowrap;
-    text-indent: 10px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    overflow: hidden;
-    width: 63px;
-    height: 63px;
-    -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
-    transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 999;
+  padding: 24px 20px 22px 5px;
+  background-color: $tertiary;
+  color: $tertiary;
+  white-space: nowrap;
+  text-indent: 10px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+  width: 63px;
+  height: 63px;
+  -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
+  transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
 
 #create-topic.btn-default .fa-plus {
-    color: white;
+  color: white;
 }
 
 #create-topic.btn-default:hover {
-    text-indent: 8px;
-    width: 190px;
-    color: white;
+  text-indent: 8px;
+  width: 190px;
+  color: white;
 }
-
 
 //Reply Fab
 .timeline-footer-controls {
-    position: relative;
+  position: relative;
 }
+
 .widget-button.btn.create {
-    border-radius: 40px;
-    position: absolute;
-    top: 50px;
-    left: -18px;
-    z-index: 999;
-    padding: 24px 20px 22px 5px;
-    background-color: $tertiary;
-    color: white;
-    text-indent: 10px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    box-shadow: 0 0 4px rgba(0,0,0,0.14),0 4px 8px rgba(0,0,0,0.28);
-    overflow: hidden;
-    width: 63px;
-    height: 63px;
-    -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
-    transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
+  border-radius: 40px;
+  position: absolute;
+  top: 50px;
+  left: -18px;
+  z-index: 999;
+  padding: 24px 20px 22px 5px;
+  background-color: $tertiary;
+  color: white;
+  text-indent: 10px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+  width: 63px;
+  height: 63px;
+  -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
+  transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
 }
 
 //Center and increase size of reply icon
-.widget-button.btn.create .fa-reply{
-    color: white;
-    font-size: 20px;
-    margin-left: -8px;
+.widget-button.btn.create .fa-reply {
+  color: white;
+  font-size: 20px;
+  margin-left: -8px;
 }
 
-
 //Proper spacing for iPad portrait
-@media only screen 
-and (min-width : 768px)
-and (max-width: 1250px)
-{
-    .timeline-container {
-        margin-left: 820px;
-    }
-    .topic-admin-popup-menu{
-        left:-40% !important;
-        
-    }
-
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+  .timeline-container {
+    margin-left: 820px;
+  }
+  .topic-admin-popup-menu {
+    left: -40% !important;
+  }
 }
 
 //Properly space notifications button
-.widget-button.btn.notifications-dropdown{
-    right: 4px;
-    position: relative;
-    border-radius: 40px;
-    width: 30px;
-    padding: 6px;
+.widget-button.btn.notifications-dropdown {
+  right: 4px;
+  position: relative;
+  border-radius: 40px;
+  width: 30px;
+  padding: 6px;
 }
 
-
-
 //cards for search results
-.fps-result{
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+.fps-result {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
   padding: 20px;
   border-radius: 2px;
 }
 
-
 @keyframes background-fade-highlight {
-    0% {
-        background-color: lighten($tertiary, 20%);
-    }
-
-    100% {
-        background-color: $secondary;
-    }
+  0% {
+    background-color: lighten($tertiary, 20%);
+  }
+  100% {
+    background-color: lighten($secondary, 10%);
+  }
 }
 
 #topic-status-info {
-    border-top: none;
+  border-top: none;
 }
-
-
 
 // RTL Overrides
 .rtl {
-      
   .widget-button.btn.notifications-dropdown .fa {
-     margin-left: -2px;
+    margin-left: -2px;
   }
-      
   .topic-avatar {
     padding-right: initial;
     padding-left: 10px;
@@ -268,39 +261,33 @@ and (max-width: 1250px)
       left: 4px;
     }
   }
-
   .embedded-posts .topic-avatar {
     padding-left: initial;
     padding-right: 0;
   }
-
-  button#login-link, button#new-account-link {
+  button#login-link,
+  button#new-account-link {
     padding-left: initial;
     padding-right: inherit;
   }
-
   #create-topic.btn-default {
     right: initial;
     left: 50px;
     padding: 24px 5px 22px 20px;
   }
-
   .widget-button.btn.create {
     left: initial;
     right: -18px;
     padding: 24px 5px 22px 20px;
   }
-
   .widget-button.btn.create .fa-reply {
     margin-left: initial;
     margin-right: -8px;
   }
-
   .widget-button.btn.notifications-dropdown {
     right: initial;
     left: 4px;
   }
-
   .widget-button.btn.notifications-dropdown .fa {
     margin-left: initial;
     margin-right: -2px;
@@ -308,9 +295,7 @@ and (max-width: 1250px)
 }
 
 // RTL Overrides
-@media only screen
-and (min-width : 768px)
-and (max-width: 1250px) {
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
   .rtl {
     .timeline-container {
       margin-left: initial;
@@ -318,7 +303,7 @@ and (max-width: 1250px) {
     }
     .topic-admin-popup-menu {
       left: initial !important;
-      right:-40% !important;
+      right: -40% !important;
     }
   }
 }
