@@ -1,3 +1,5 @@
+@import "colors";
+
 //add space between categories
 .topic-list.categories {
   border-spacing: 0 1em;
@@ -306,4 +308,16 @@ button#new-account-link {
       right: -40% !important;
     }
   }
+}
+
+.btn-primary {
+  border: 1px solid $link-primary;
+  color: $white;
+  background:$link-primary;
+}
+
+.btn-primary:hover {
+  color:$link-primary;
+  border-color: $link-primary;
+  background: $white;
 }
