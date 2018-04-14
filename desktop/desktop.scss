@@ -179,30 +179,31 @@ button#new-account-link {
 }
 
 .widget-button.btn.create {
-  border-radius: 40px;
+  border-radius: 50%;
   position: absolute;
   top: 50px;
   left: -18px;
-  z-index: 999;
-  padding: 24px 20px 22px 5px;
+  z-index: 300;
   background-color: $tertiary;
-  color: white;
-  text-indent: 10px;
+  color: $header-primary;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   overflow: hidden;
-  width: 63px;
-  height: 63px;
-  -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
-  transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: right 0.5s, bottom 0.5s, border-radius 0.5s,
+    text-indent 0.2s, visibility 1s, width 0.2s ease, height 0.5s ease 0.4s,
+    color 0.5s, background-color 2s, -webkit-transform 0.5s;
+  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
+    visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
+    background-color 2s, transform 0.5s;
 }
 
-//Center and increase size of reply icon
+//Increase size of reply icon
 .widget-button.btn.create .fa-reply {
   color: white;
   font-size: 20px;
-  margin-left: -8px;
 }
 
 //Proper spacing for iPad portrait
