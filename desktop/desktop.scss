@@ -1,45 +1,30 @@
-//add space between categories
-.topic-list.categories {
-  border-spacing: 0 1em;
-  border-collapse: separate;
-}
-
-//change category background color to white
-.topic-list.categories>tbody>tr {
-  background-color: lighten($secondary, 10%);
-}
-
-//padding for category title and description
-.topic-list.categories th,
-.topic-list.categories td {
-  padding: 0 15px 0 15px;
-}
-
-//Shadows for categories
-.topic-list.categories>tbody>tr td.category,
-.topic-list.categories>tbody>tr td.stats,
-.topic-list.categories>tbody>tr td.latest {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+@mixin boxShadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+}
+
+@mixin buttonShadow {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+@mixin buttonTransition {
+  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
+    visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
+    background-color 2s, transform 0.5s;
 }
 
 //add shadow behind the list of topics on right in Category and Latest View
 //add shadow behind list of categories on left in Category and Latest View
 //add shadow behind topics in Latest view
 .category-list,
-.topic-list:not(.categories),
+.topic-list,
 .latest-topic-list {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  @include boxShadow;
   background-color: lighten($secondary, 10%);
-  border-collapse: collapse;
 }
 
 //underline navigation links
-.nav-pills>li.active>a,
-.nav-pills>li>a.active {
+.nav-pills > li.active > a,
+.nav-pills > li > a.active {
   color: $primary;
   font-weight: 500;
   background-color: $secondary;
@@ -47,7 +32,7 @@
 }
 
 //remove highlighting navigation background on hover
-.nav-pills>li>a:hover {
+.nav-pills > li > a:hover {
   background-color: $secondary;
 }
 
@@ -63,14 +48,11 @@
 
 //create conversation cards
 .topic-body {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  @include boxShadow;
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
-  padding-left: 20px;
   border-radius: 2px;
-  padding-right: 20px;
+  padding: 12px 20px 0 20px;
 }
 
 //more space for avatars
@@ -93,52 +75,14 @@
 }
 
 .embedded-posts.top.topic-body {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+  box-shadow: none;
   background-color: $secondary;
-}
-
-//raise and round buttons
-.btn:not(.bulk-select):not(.period-chooser-header) {
-  border-radius: 2px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-//flatten editor, topic-map, more badges, and revision view buttons
-.d-editor-button-bar .btn,
-.topic-map .btn.no-text,
-.badge-section .btn,
-#revision .btn {
-  border-radius: 0px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
-}
-
-//properly space buttons on login modal
-button#login-link,
-button#new-account-link {
-  padding-left: 20px;
 }
 
 //darken color, remove shadow and border when pressed
 .btn:active {
-  background-color: rgba(0, 0, 0, .4);
-  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 00px 0 rgba(0, 0, 0, 0.12);
-}
-
-.btn:focus {
-  outline: -webkit-focus-ring-color auto 0px;
-}
-
-//shift "more" button slightly left
-.more-topics .btn {
-  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
 }
 
 //New Topic Fab
@@ -153,14 +97,11 @@ button#new-account-link {
   color: $tertiary;
   white-space: nowrap;
   text-indent: 10px;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  @include buttonShadow;
   overflow: hidden;
   width: 63px;
   height: 63px;
-  -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
-  transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
+  @include buttonTransition;
 }
 
 #create-topic.btn-default .fa-plus {
@@ -186,18 +127,11 @@ button#new-account-link {
   z-index: 300;
   background-color: $tertiary;
   color: $header-primary;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  @include buttonShadow;
   overflow: hidden;
   width: 60px;
   height: 60px;
-  -webkit-transition: right 0.5s, bottom 0.5s, border-radius 0.5s,
-    text-indent 0.2s, visibility 1s, width 0.2s ease, height 0.5s ease 0.4s,
-    color 0.5s, background-color 2s, -webkit-transform 0.5s;
-  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
-    visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
-    background-color 2s, transform 0.5s;
+  @include buttonTransition;
 }
 
 //Increase size of reply icon
@@ -227,9 +161,7 @@ button#new-account-link {
 
 //cards for search results
 .fps-result {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  @include boxShadow;
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
   padding: 20px;
@@ -245,8 +177,9 @@ button#new-account-link {
   }
 }
 
-#topic-status-info {
-  border-top: none;
+// clipped user page button shadows
+.user-main .about .controls {
+  padding-right: 10px;
 }
 
 // RTL Overrides
