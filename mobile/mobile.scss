@@ -48,3 +48,15 @@
 aside.quote {
   @include boxShadow;
 }
+
+// RTL Overrides
+.rtl {
+  .topic-avatar {
+    padding-left: initial;
+    padding-right: 10px;
+    .avatar-flair {
+      right: initial;
+      left: 4px;
+    }
+  }
+}

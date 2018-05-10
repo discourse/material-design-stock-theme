@@ -184,9 +184,6 @@
 
 // RTL Overrides
 .rtl {
-  .widget-button.btn.notifications-dropdown .fa {
-    margin-left: -2px;
-  }
   .topic-avatar {
     padding-right: initial;
     padding-left: 10px;
@@ -199,11 +196,6 @@
     padding-left: initial;
     padding-right: 0;
   }
-  button#login-link,
-  button#new-account-link {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   #create-topic.btn-default {
     right: initial;
     left: 50px;
@@ -212,19 +204,14 @@
   .widget-button.btn.create {
     left: initial;
     right: -18px;
-    padding: 24px 5px 22px 20px;
-  }
-  .widget-button.btn.create .fa-reply {
-    margin-left: initial;
-    margin-right: -8px;
   }
   .widget-button.btn.notifications-dropdown {
     right: initial;
     left: 4px;
   }
-  .widget-button.btn.notifications-dropdown .fa {
-    margin-left: initial;
-    margin-right: -2px;
+  .user-main .about .controls {
+    padding-right: initial;
+    padding-left: 10px;
   }
 }
 
