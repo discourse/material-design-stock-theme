@@ -1,3 +1,5 @@
+@import "common/foundation/variables";
+
 @mixin boxShadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
 }
@@ -10,6 +12,19 @@
   transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
     visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
     background-color 2s, transform 0.5s;
+}
+
+// make header icons semi-translucent
+.d-header-icons {
+  .d-icon {
+    color: rgba(
+      dark-light-choose(
+        scale-color($header_primary, $lightness: 50%),
+        $header_primary
+      ),
+      0.7
+    );
+  }
 }
 
 //add shadow behind the list of topics on right in Category and Latest View
@@ -100,13 +115,14 @@
   position: fixed;
   bottom: 30px;
   right: 50px;
-  z-index: 999;
+  z-index: z("composer", "content") - 1;
   background-color: $tertiary;
   color: $secondary;
   white-space: nowrap;
   overflow: hidden;
   .d-icon {
     margin: 0;
+    color: $secondary;
   }
   .d-button-label {
     display: inline-block;
@@ -144,14 +160,15 @@
   position: absolute;
   top: 50px;
   left: -18px;
-  z-index: 300;
   background-color: $tertiary;
-  color: $header-primary;
   @include buttonShadow;
   overflow: hidden;
   width: 60px;
   height: 60px;
   @include buttonTransition;
+  .d-icon {
+    color: $secondary;
+  }
 }
 
 //Increase size of reply icon
