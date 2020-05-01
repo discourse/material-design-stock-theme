@@ -66,7 +66,7 @@
   @include boxShadow;
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 15px 20px 0 20px;
 }
 
@@ -172,8 +172,8 @@
 .widget-button.btn.create {
   border-radius: 50%;
   position: absolute;
-  top: 50px;
-  left: -18px;
+  top: 55px;
+  left: -10px;
   background-color: $tertiary;
   @include buttonShadow;
   overflow: hidden;
@@ -216,7 +216,7 @@
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
   padding: 20px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 @keyframes background-fade-highlight {
@@ -253,7 +253,7 @@
   }
   .widget-button.btn.create {
     left: initial;
-    right: -18px;
+    right: -10px;
   }
   .widget-button.btn.notifications-dropdown {
     right: initial;
