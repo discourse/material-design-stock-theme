@@ -67,7 +67,7 @@
   background-color: lighten($secondary, 10%);
   margin-top: 10px;
   border-radius: 2px;
-  padding: 12px 20px 0 20px;
+  padding: 15px 20px 0 20px;
 }
 
 //more space for avatars
@@ -85,8 +85,22 @@
 }
 
 //improve format of embedded posts
-.embedded-posts .topic-avatar {
-  padding-left: 0px;
+.embedded-posts {
+  border: none;
+
+  .topic-avatar {
+    padding-left: 0px;
+  }
+  &.top {
+    padding-left: 2em;
+    .row .topic-avatar,
+    .row .topic-body {
+      border: none;
+    }
+    .collapse-down {
+      transform: translate(-120%, 62%);
+    }
+  }
 }
 
 .embedded-posts.top.topic-body {

@@ -41,3 +41,27 @@ body textarea {
   border-radius: 0;
   box-shadow: none;
 }
+
+// Topic adjustments
+
+.small-action {
+  border-top: none;
+}
+
+.read-state {
+  right: 1em;
+}
+
+.post-notice {
+  border: none;
+  background: transparent;
+  margin-left: 50px;
+}
+
+.embedded-posts {
+  border: none;
+  .embedded-posts.top .row .topic-avatar,
+  .embedded-posts.top .row .topic-body {
+    border: none;
+  }
+}
