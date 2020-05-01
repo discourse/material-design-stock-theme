@@ -23,6 +23,9 @@ body textarea {
 .btn {
   border-radius: 2px;
   @include boxShadow;
+  &.btn-flat.close {
+    box-shadow: none;
+  }
 }
 
 //remove shadow from a few buttons
