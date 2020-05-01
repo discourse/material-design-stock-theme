@@ -12,16 +12,20 @@ body textarea {
 }
 
 @mixin boxShadow {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  // Matched from https://material.io/components/cards/
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 @mixin buttonShadow {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  // Matched from https://material.io/components/buttons/
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 //raise and round buttons
 .btn {
-  border-radius: 2px;
+  border-radius: 4px;
   @include boxShadow;
   &.btn-flat.close {
     box-shadow: none;
@@ -46,6 +50,12 @@ body textarea {
 
 .small-action {
   border-top: none;
+  margin-top: 1em;
+  max-width: 808px;
+  button {
+    margin-left: 1em;
+    background-color: lighten($secondary, 10%);
+  }
 }
 
 .read-state {
@@ -58,10 +68,6 @@ body textarea {
   margin-left: 50px;
 }
 
-.embedded-posts {
-  border: none;
-  .embedded-posts.top .row .topic-avatar,
-  .embedded-posts.top .row .topic-body {
-    border: none;
-  }
+.popup-menu button {
+  margin-bottom: 7px;
 }
