@@ -54,7 +54,12 @@ body textarea {
   max-width: 808px;
   button {
     margin-left: 1em;
-    background-color: lighten($secondary, 10%);
+    @media (prefers-color-scheme: dark) {
+      background-color: #3b3b3b;
+    }
+    @media (prefers-color-scheme: light) {
+      background-color: #fff;
+    }
   }
 }
 
