@@ -18,7 +18,10 @@
 .d-header-icons {
   .d-icon {
     color: rgba(
-      var(--header_primary-rgb),
+      dark-light-choose(
+        scale-color($header_primary, $lightness: 50%),
+        $header_primary
+      ),
       0.7
     );
   }
@@ -31,47 +34,37 @@
 .topic-list,
 .latest-topic-list {
   @include boxShadow;
-  @media (prefers-color-scheme: dark) {
-    background-color: #3b3b3b;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #fff;
-  }
+  background-color: lighten($secondary, 10%);
 }
 
 //underline navigation links
 .nav-pills > li.active > a,
 .nav-pills > li > a.active {
-  color: var(--primary, $primary);
+  color: $primary;
   font-weight: 500;
-  background-color: var(--secondary, $secondary);
-  border-bottom: 3px solid var(--tertiary, $tertiary);
+  background-color: $secondary;
+  border-bottom: 3px solid $tertiary;
 }
 
 //remove highlighting navigation background on hover
 .nav-pills > li > a:hover {
-  background-color: var(--secondary, $secondary);
+  background-color: $secondary;
 }
 
 //fix color of user profile navigation icons
 .user-main .nav-pills {
   a.active i {
-    color: var(--primary, $primary);
+    color: $primary;
   }
   a:hover:not(.active) i {
-    color: var(--quaternary, $quaternary);
+    color: $quaternary;
   }
 }
 
 //create conversation cards
 .topic-body {
   @include boxShadow;
-  @media (prefers-color-scheme: dark) {
-    background-color: #3b3b3b;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #fff;
-  }
+  background-color: lighten($secondary, 10%);
   margin-top: 10px;
   border-radius: 4px;
   padding: 15px 20px 0 20px;
@@ -112,7 +105,7 @@
 
 .embedded-posts.top.topic-body {
   box-shadow: none;
-  background-color: var(--secondary, $secondary);
+  background-color: $secondary;
 }
 
 //darken color, remove shadow and border when pressed
@@ -137,13 +130,13 @@
   bottom: 30px;
   right: 50px;
   z-index: z("composer", "content") - 1;
-  background-color: var(--tertiary, $tertiary);
-  color: var(--secondary, $secondary);
+  background-color: $tertiary;
+  color: $secondary;
   white-space: nowrap;
   overflow: hidden;
   .d-icon {
     margin: 0;
-    color: var(--secondary, $secondary);
+    color: $secondary;
   }
   .d-button-label {
     display: inline-block;
@@ -164,7 +157,7 @@
 }
 
 #create-topic.btn-default .fa-plus {
-  color: var(--secondary, $secondary);
+  color: $secondary;
 }
 
 #create-topic.btn-default:hover {
@@ -181,20 +174,20 @@
   position: absolute;
   top: 55px;
   left: -10px;
-  background-color: var(--tertiary, $tertiary);
+  background-color: $tertiary;
   @include buttonShadow;
   overflow: hidden;
   width: 60px;
   height: 60px;
   @include buttonTransition;
   .d-icon {
-    color: var(--secondary, $secondary);
+    color: $secondary;
   }
 }
 
 //Increase size of reply icon
 .widget-button.btn.create .fa-reply {
-  color: var(--secondary, $secondary);
+  color: $secondary;
   font-size: 20px;
 }
 
@@ -220,12 +213,7 @@
 //cards for search results
 .fps-result {
   @include boxShadow;
-  @media (prefers-color-scheme: dark) {
-    background-color: #3b3b3b;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #fff;
-  }
+  background-color: lighten($secondary, 10%);
   margin-top: 10px;
   padding: 20px;
   border-radius: 4px;
@@ -233,15 +221,10 @@
 
 @keyframes background-fade-highlight {
   0% {
-    background-color: var(--tertiary-low, $tertiary-low);
+    background-color: lighten($tertiary, 20%);
   }
   100% {
-    @media (prefers-color-scheme: dark) {
-      background-color: #3b3b3b;
-    }
-    @media (prefers-color-scheme: light) {
-      background-color: #fff;
-    }
+    background-color: lighten($secondary, 10%);
   }
 }
 
