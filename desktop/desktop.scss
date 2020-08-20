@@ -17,10 +17,7 @@
 // make header icons semi-translucent
 .d-header-icons {
   .d-icon {
-    color: rgba(
-      var(--header_primary-rgb),
-      0.7
-    );
+    color: rgba(var(--header_primary-rgb), 0.7);
   }
 }
 
@@ -31,12 +28,7 @@
 .topic-list,
 .latest-topic-list {
   @include boxShadow;
-  @media (prefers-color-scheme: dark) {
-    background-color: #3b3b3b;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #fff;
-  }
+  background-color: var(--material-lighter-secondary);
 }
 
 //underline navigation links
@@ -66,12 +58,7 @@
 //create conversation cards
 .topic-body {
   @include boxShadow;
-  @media (prefers-color-scheme: dark) {
-    background-color: #3b3b3b;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #fff;
-  }
+  background-color: var(--material-lighter-secondary);
   margin-top: 10px;
   border-radius: 4px;
   padding: 15px 20px 0 20px;
@@ -220,12 +207,7 @@
 //cards for search results
 .fps-result {
   @include boxShadow;
-  @media (prefers-color-scheme: dark) {
-    background-color: #3b3b3b;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #fff;
-  }
+  background-color: var(--material-lighter-secondary);
   margin-top: 10px;
   padding: 20px;
   border-radius: 4px;
@@ -236,12 +218,7 @@
     background-color: var(--tertiary-low, $tertiary-low);
   }
   100% {
-    @media (prefers-color-scheme: dark) {
-      background-color: #3b3b3b;
-    }
-    @media (prefers-color-scheme: light) {
-      background-color: #fff;
-    }
+    background-color: var(--material-lighter-secondary);
   }
 }
 
