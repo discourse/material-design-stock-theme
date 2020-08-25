@@ -5,12 +5,7 @@
 //create conversation cards
 .topic-body {
   @include boxShadow;
-  @media (prefers-color-scheme: dark) {
-    background-color: #3b3b3b;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #fff;
-  }
+  background-color: lighten($secondary, 10%);
   margin-top: 10px;
   padding: 20px;
   border-radius: 4px;
