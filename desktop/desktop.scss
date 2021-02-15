@@ -34,24 +34,24 @@
 //underline navigation links
 .nav-pills > li.active > a,
 .nav-pills > li > a.active {
-  color: $primary;
+  color: var(--primary);
   font-weight: 500;
-  background-color: $secondary;
-  border-bottom: 3px solid $tertiary;
+  background-color: var(--secondary);
+  border-bottom: 3px solid var(--tertiary);
 }
 
 //remove highlighting navigation background on hover
 .nav-pills > li > a:hover {
-  background-color: $secondary;
+  background-color: var(--secondary);
 }
 
 //fix color of user profile navigation icons
 .user-main .nav-pills {
   a.active i {
-    color: $primary;
+    color: var(--primary);
   }
   a:hover:not(.active) i {
-    color: $quaternary;
+    color: var(--quaternary);
   }
 }
 
