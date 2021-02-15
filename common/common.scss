@@ -54,7 +54,7 @@ body textarea {
   max-width: 808px;
   button {
     margin-left: 1em;
-    background-color: lighten($secondary, 10%);
+    background-color: var(--material-lighter-secondary);
   }
 }
 
