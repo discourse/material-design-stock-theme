@@ -272,3 +272,14 @@
     }
   }
 }
+
+// Personal messages
+
+.archetype-private_message {
+  .topic-body {
+    margin-left: -2em;
+  }
+  .small-action {
+    max-width: 758px;
+  }
+}

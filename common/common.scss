@@ -76,3 +76,14 @@ body textarea {
 .popup-menu .btn {
   box-shadow: none;
 }
+
+// Personal messages
+
+.archetype-private_message {
+  .topic-body {
+    box-shadow: none;
+    .cooked {
+      @include boxShadow;
+    }
+  }
+}
