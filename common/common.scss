@@ -23,8 +23,10 @@ body textarea {
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
+@import "sidebar";
+
 //raise and round buttons
-.btn {
+.btn:not(.sidebar-section-header, .header-sidebar-toggle button) {
   border-radius: 4px;
   @include boxShadow;
   &.btn-flat.close {
