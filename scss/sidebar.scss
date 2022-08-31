@@ -1,0 +1,22 @@
+// Sidebar toggle styling
+.header-sidebar-toggle {
+  button {
+    .d-icon {
+      color: var(--tertiary);
+      box-shadow: none;
+    }
+
+    &:hover {
+      .d-icon {
+        color: var(--primary-med-or-secondary-med);
+      }
+    }
+  }
+}
+
+// Sidebar Style Overrides
+.sidebar-wrapper {
+  @include boxShadow;
+  margin-top: 2.4em;
+  background-color: var(--material-lighter-secondary);
+}
