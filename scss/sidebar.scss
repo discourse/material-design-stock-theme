@@ -1,3 +1,9 @@
+.has-sidebar-page .sidebar-wrapper {
+  margin-top: 1.5em;
+  top: calc((var(--header-offset, 0) + 1.5em));
+  height: calc(100vh - (var(--header-offset, 0) + 3em));
+}
+
 // Sidebar toggle styling
 .header-sidebar-toggle {
   button {
