@@ -1,4 +1,21 @@
 //use Roboto font
+@font-face {
+  font-family: "Roboto";
+  src: url($roboto);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url($roboto-bold);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url($roboto-italic);
+  font-style: italic;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -26,8 +43,11 @@ body textarea {
 @import "sidebar";
 
 //raise and round buttons
-.btn:not(.sidebar-section-header, .header-sidebar-toggle
-    button, .user-menu-tab) {
+.btn:not(
+    .sidebar-section-header,
+    .header-sidebar-toggle button,
+    .user-menu-tab
+  ) {
   border-radius: 4px;
   @include boxShadow;
   &.btn-flat.close {

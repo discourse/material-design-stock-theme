@@ -63,5 +63,10 @@
       "success": "009900",
       "love": "fa6c8d"
     }
+  },
+  "assets": {
+    "roboto": "assets/Roboto-Regular.ttf",
+    "roboto-bold": "assets/Roboto-Bold.ttf",
+    "roboto-italic": "assets/Roboto-Italic.ttf"
   }
 }
