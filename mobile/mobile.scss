@@ -60,3 +60,9 @@ aside.quote {
     }
   }
 }
+
+// Chat
+
+#main-chat-outlet {
+  margin-top: calc(var(--header-offset) - 1em);
+}

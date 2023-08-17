@@ -46,7 +46,9 @@ body textarea {
 .btn:not(
     .sidebar-section-header,
     .header-sidebar-toggle button,
-    .user-menu-tab
+    .user-menu-tab,
+    .btn-flat,
+    .btn-link
   ) {
   border-radius: 4px;
   @include boxShadow;
@@ -56,7 +58,7 @@ body textarea {
 }
 
 //remove shadow from a few buttons
-.d-editor-button-bar .btn,
+.d-editor-button-bar .btn.btn-icon,
 .bulk-select-all,
 .bulk-clear-all,
 .period-chooser-header,
@@ -109,4 +111,29 @@ body textarea {
       @include boxShadow;
     }
   }
+}
+
+// Admin
+
+.admin-controls .nav-pills > li a.active {
+  background: transparent;
+}
+
+// Chat
+
+body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
+  gap: 2em;
+}
+
+.has-full-page-chat:not(.discourse-sidebar) .full-page-chat {
+  border: none;
+}
+
+.chat-channel-card {
+  background: var(--primary-very-low);
+  border: 1px solid;
+  border-left: 5px solid;
+  border-top-color: var(--primary-low) !important;
+  border-bottom-color: var(--primary-low) !important;
+  border-right-color: var(--primary-low) !important;
 }
