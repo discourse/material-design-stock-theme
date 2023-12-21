@@ -1,5 +1,7 @@
 @mixin boxShadow {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 0 0 0 rgba(0, 0, 0, 0.12);
 }
 
 //create conversation cards
@@ -59,10 +61,4 @@ aside.quote {
       left: 4px;
     }
   }
-}
-
-// Chat
-
-#main-chat-outlet {
-  margin-top: calc(var(--header-offset) - 1em);
 }
