@@ -127,6 +127,18 @@
   bottom: 30px;
   right: 50px;
   z-index: z("composer", "content") - 1;
+
+  .chat-drawer-active & {
+    z-index: z("chat-drawer") - 1;
+    bottom: 60px;
+  }
+
+  @media screen and (max-width: 1520px) {
+    body:has(#reply-control.draft.show-preview) & {
+      bottom: 60px;
+    }
+  }
+
   background-color: var(--tertiary);
   color: var(--secondary);
   white-space: nowrap;
