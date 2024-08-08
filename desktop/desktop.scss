@@ -133,8 +133,10 @@
     bottom: 60px;
   }
 
-  body:has(#reply-control.draft.show-preview) & {
-    bottom: 60px;
+  @media screen and (max-width: 1520px) {
+    body:has(#reply-control.draft.show-preview) & {
+      bottom: 60px;
+    }
   }
 
   background-color: var(--tertiary);
