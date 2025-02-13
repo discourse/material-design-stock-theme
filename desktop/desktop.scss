@@ -1,17 +1,29 @@
 @import "common/foundation/variables";
 
 @mixin boxShadow {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 0 0 0 rgba(0, 0, 0, 0.12);
 }
 
 @mixin buttonShadow {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow:
+    0 0 4px rgba(0, 0, 0, 0.14),
+    0 4px 8px rgba(0, 0, 0, 0.28);
 }
 
 @mixin buttonTransition {
-  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
-    visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
-    background-color 2s, transform 0.5s;
+  transition:
+    right 0.5s,
+    bottom 0.5s,
+    border-radius 0.5s,
+    text-indent 0.2s,
+    visibility 1s,
+    width 0.2s ease,
+    height 0.5s ease 0.4s,
+    color 0.5s,
+    background-color 2s,
+    transform 0.5s;
 }
 
 // make header icons semi-translucent
@@ -26,26 +38,14 @@
 //add shadow behind topics in Latest view
 .category-list,
 .topic-list,
+.column,
 .latest-topic-list {
   @include boxShadow;
   background-color: var(--material-lighter-secondary);
 }
 
-//underline navigation links
-
-.nav-pills > li > a {
-  border-bottom: 3px solid transparent;
-}
-
-.nav-pills > li.active > a {
-  color: var(--primary);
-  background-color: var(--secondary);
-  border-bottom: 3px solid var(--tertiary);
-}
-
-//remove highlighting navigation background on hover
-.nav-pills > li > a:hover {
-  background-color: var(--secondary);
+.column {
+  align-self: start;
 }
 
 //fix color of user profile navigation icons
@@ -311,6 +311,8 @@
 
 #main-chat-outlet {
   margin-top: 1.5em;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
