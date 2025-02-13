@@ -13,7 +13,8 @@
       "highlight": "ffff8d",
       "danger": "ff5722",
       "success": "4caf50",
-      "love": "fa6c8d"
+      "love": "fa6c8d",
+      "selected": "fff1d9"
     },
     "Material Red/Blue": {
       "primary": "212121",
@@ -25,7 +26,8 @@
       "highlight": "ffff8d",
       "danger": "ff6d00",
       "success": "4caf50",
-      "love": "fa6c8d"
+      "love": "fa6c8d",
+      "selected": "e3edff"
     },
     "Material Blue/Red": {
       "primary": "212121",
@@ -37,7 +39,8 @@
       "highlight": "ffff8d",
       "danger": "ff6d00",
       "success": "4caf50",
-      "love": "fa6c8d"
+      "love": "fa6c8d",
+      "selected": "ffe5e5"
     },
     "Material Indigo/Orange": {
       "primary": "212121",
@@ -49,7 +52,8 @@
       "highlight": "ffeb3b",
       "danger": "f44336",
       "success": "4caf50",
-      "love": "fa6c8d"
+      "love": "fa6c8d",
+      "selected": "ffe6de"
     },
     "Material Dark": {
       "primary": "fafafa",
@@ -61,7 +65,9 @@
       "highlight": "fafafa",
       "danger": "e45735",
       "success": "009900",
-      "love": "fa6c8d"
+      "love": "fa6c8d",
+      "selected": "00424a",
+      "hover": "2d2d2d"
     }
   },
   "assets": {

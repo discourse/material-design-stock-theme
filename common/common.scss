@@ -48,7 +48,8 @@ body textarea {
     .header-sidebar-toggle button,
     .user-menu-tab,
     .btn-flat,
-    .btn-link
+    .btn-link,
+    .btn-transparent
   ) {
   border-radius: 4px;
   @include boxShadow;
@@ -66,7 +67,8 @@ body textarea {
 .badge-section .btn,
 #revision .btn,
 #new-account-link,
-#login-link {
+#login-link,
+.dropdown-menu li .btn {
   border-radius: 0;
   box-shadow: none;
 }
@@ -75,11 +77,25 @@ body textarea {
 
 .small-action {
   border-top: none;
-  margin-top: 1em;
-  max-width: 808px;
+  box-sizing: border-box;
+  margin-block: 1em 0.5em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  max-width: 754px;
+  padding-left: 20px;
+  .desktop-view & {
+    margin-left: calc(var(--topic-avatar-width) + 10px);
+  }
   button {
     margin-left: 1em;
     background-color: var(--material-lighter-secondary);
+  }
+  .topic-avatar {
+    display: none;
+  }
+  .small-action-desc {
+    border: none;
   }
 }
 
@@ -89,13 +105,16 @@ body textarea {
 
 .gap {
   margin-top: 1em;
+  padding-bottom: 0;
 }
 
 .post-notice {
   border: none;
   background: transparent;
-  margin-left: 50px;
-  margin-top: 0.75em;
+  .desktop-view & {
+    margin-left: 50px;
+    margin-top: 0.75em;
+  }
 }
 
 .popup-menu .btn {
@@ -136,4 +155,30 @@ body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
   border-top-color: var(--primary-low) !important;
   border-bottom-color: var(--primary-low) !important;
   border-right-color: var(--primary-low) !important;
+}
+
+#main-outlet .topic-map {
+  padding: 10px;
+  margin-top: 0.75em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+
+  .desktop-view & {
+    padding: 15px 30px;
+    max-width: 752px;
+    margin-left: calc(var(--topic-avatar-width) + 10px);
+  }
+}
+
+.topic-timer-info {
+  border: none;
+}
+
+.extra-info-wrapper {
+  .badge-category__wrapper .d-icon,
+  .title-wrapper .topic-statuses .d-icon,
+  .assigned-to .d-icon {
+    color: var(--secondary);
+  }
 }

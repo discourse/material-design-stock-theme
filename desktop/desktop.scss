@@ -26,26 +26,14 @@
 //add shadow behind topics in Latest view
 .category-list,
 .topic-list,
+.column,
 .latest-topic-list {
   @include boxShadow;
   background-color: var(--material-lighter-secondary);
 }
 
-//underline navigation links
-
-.nav-pills > li > a {
-  border-bottom: 3px solid transparent;
-}
-
-.nav-pills > li.active > a {
-  color: var(--primary);
-  background-color: var(--secondary);
-  border-bottom: 3px solid var(--tertiary);
-}
-
-//remove highlighting navigation background on hover
-.nav-pills > li > a:hover {
-  background-color: var(--secondary);
+.column {
+  align-self: start;
 }
 
 //fix color of user profile navigation icons
