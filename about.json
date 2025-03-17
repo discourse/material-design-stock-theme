@@ -74,5 +74,6 @@
     "roboto": "assets/Roboto-Regular.ttf",
     "roboto-bold": "assets/Roboto-Bold.ttf",
     "roboto-italic": "assets/Roboto-Italic.ttf"
-  }
+  },
+  "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
 }
