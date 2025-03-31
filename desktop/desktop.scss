@@ -1,17 +1,30 @@
+@use "sass:color";
 @import "common/foundation/variables";
 
 @mixin boxShadow {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 0 0 0 rgba(0, 0, 0, 0.12);
 }
 
 @mixin buttonShadow {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow:
+    0 0 4px rgba(0, 0, 0, 0.14),
+    0 4px 8px rgba(0, 0, 0, 0.28);
 }
 
 @mixin buttonTransition {
-  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
-    visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
-    background-color 2s, transform 0.5s;
+  transition:
+    right 0.5s,
+    bottom 0.5s,
+    border-radius 0.5s,
+    text-indent 0.2s,
+    visibility 1s,
+    width 0.2s ease,
+    height 0.5s ease 0.4s,
+    color 0.5s,
+    background-color 2s,
+    transform 0.5s;
 }
 
 // make header icons semi-translucent
@@ -21,9 +34,9 @@
   }
 }
 
-//add shadow behind the list of topics on right in Category and Latest View
-//add shadow behind list of categories on left in Category and Latest View
-//add shadow behind topics in Latest view
+// add shadow behind the list of topics on right in Category and Latest View
+// add shadow behind list of categories on left in Category and Latest View
+// add shadow behind topics in Latest view
 .category-list,
 .topic-list,
 .column,
@@ -36,17 +49,18 @@
   align-self: start;
 }
 
-//fix color of user profile navigation icons
+// fix color of user profile navigation icons
 .user-main .nav-pills {
   a.active i {
     color: var(--primary);
   }
+
   a:hover:not(.active) i {
     color: var(--quaternary);
   }
 }
 
-//create conversation cards
+// create conversation cards
 .topic-body {
   @include boxShadow;
   background-color: var(--material-lighter-secondary);
@@ -55,33 +69,37 @@
   padding: 15px 20px 0 20px;
 }
 
-//more space for avatars
+// more space for avatars
 .topic-avatar {
   border-top: 0;
   padding-right: 10px;
+
   .avatar-flair {
     right: 4px;
   }
 }
 
-//remove stray border from bottom of last post
+// remove stray border from bottom of last post
 .topic-status-info {
   border-top: 0;
 }
 
-//improve format of embedded posts
+// improve format of embedded posts
 .embedded-posts {
   border: none;
 
   .topic-avatar {
-    padding-left: 0px;
+    padding-left: 0;
   }
+
   &.top {
     padding-left: 2em;
+
     .row .topic-avatar,
     .row .topic-body {
       border: none;
     }
+
     .collapse-down {
       transform: translate(-120%, 62%);
     }
@@ -93,17 +111,18 @@
   background-color: var(--secondary);
 }
 
-//darken color, remove shadow and border when pressed
+// darken color, remove shadow and border when pressed
 .btn:active {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: none;
 }
 
-//New Topic Fab
+// New Topic Fab
 #create-topic.btn-default {
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include buttonShadow;
   @include buttonTransition;
   padding: 0;
@@ -115,6 +134,10 @@
   bottom: 30px;
   right: 50px;
   z-index: z("composer", "content") - 1;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  white-space: nowrap;
+  overflow: hidden;
 
   .chat-drawer-active & {
     z-index: z("chat-drawer") - 1;
@@ -127,26 +150,24 @@
     }
   }
 
-  background-color: var(--tertiary);
-  color: var(--secondary);
-  white-space: nowrap;
-  overflow: hidden;
   .d-icon {
     margin: 0;
     color: var(--secondary);
   }
+
   .d-button-label {
     display: inline-block;
     transition: all 0.3s;
     margin: 0 0.25em;
   }
 
-  &:not(:hover):not(:active):not(:focus) {
+  &:not(:hover, :active, :focus) {
     .d-button-label {
       opacity: 0;
       width: 0;
       margin: 0;
     }
+
     .d-icon {
       margin: 0 0.25em;
     }
@@ -165,7 +186,7 @@
   background-color: var(--tertiary-medium);
 }
 
-//Reply Fab
+// Reply Fab
 .timeline-footer-controls {
   position: relative;
 }
@@ -176,33 +197,36 @@
   top: 55px;
   left: -10px;
   background-color: var(--tertiary);
-  @include buttonShadow;
   overflow: hidden;
   width: 60px;
   height: 60px;
+
+  @include buttonShadow;
   @include buttonTransition;
+
   .d-icon {
     color: var(--secondary);
   }
 }
 
-//Increase size of reply icon
+// Increase size of reply icon
 .widget-button.btn.create .fa-reply {
   color: var(--secondary);
   font-size: 20px;
 }
 
-//Proper spacing for iPad portrait
+// Proper spacing for iPad portrait
 @media only screen and (min-width: 768px) and (max-width: 1250px) {
   .timeline-container {
     margin-left: 820px;
   }
+
   .topic-admin-popup-menu {
     left: -40% !important;
   }
 }
 
-//Properly space notifications button
+// Properly space notifications button
 .widget-button.btn.notifications-dropdown {
   right: 4px;
   position: relative;
@@ -211,7 +235,7 @@
   padding: 6px;
 }
 
-//cards for search results
+// cards for search results
 .fps-result {
   @include boxShadow;
   background-color: var(--material-lighter-secondary);
@@ -222,8 +246,9 @@
 
 @keyframes background-fade-highlight {
   0% {
-    background-color: lighten($tertiary, 20%);
+    background-color: color.adjust($tertiary, $lightness: 20%);
   }
+
   100% {
     background-color: var(--material-lighter-secondary);
   }
@@ -239,27 +264,33 @@
   .topic-avatar {
     padding-right: initial;
     padding-left: 10px;
+
     .avatar-flair {
       right: initial;
       left: 4px;
     }
   }
+
   .embedded-posts .topic-avatar {
     padding-left: initial;
     padding-right: 0;
   }
+
   #create-topic.btn-default {
     right: initial;
     left: 50px;
   }
+
   .widget-button.btn.create {
     left: initial;
     right: -10px;
   }
+
   .widget-button.btn.notifications-dropdown {
     right: initial;
     left: 4px;
   }
+
   .user-main .about .controls {
     padding-right: initial;
     padding-left: 10px;
@@ -273,6 +304,7 @@
       margin-left: initial;
       margin-right: 820px;
     }
+
     .topic-admin-popup-menu {
       left: initial !important;
       right: -40% !important;
@@ -281,24 +313,25 @@
 }
 
 // Personal messages
-
 .archetype-private_message {
   .topic-body {
     margin-left: -2em;
   }
+
   .small-action {
     max-width: 758px;
   }
 }
 
 // Chat
-
 .chat-channel {
   height: calc(100dvh - (var(--header-offset) + 6em));
 }
 
 #main-chat-outlet {
   margin-top: 1.5em;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
