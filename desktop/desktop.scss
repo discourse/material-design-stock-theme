@@ -3,14 +3,14 @@
 
 @mixin boxShadow {
   box-shadow:
-    0 2px 5px 0 rgba(0, 0, 0, 0.16),
-    0 0 0 0 rgba(0, 0, 0, 0.12);
+    0 2px 5px 0 rgb(0, 0, 0, 0.16),
+    0 0 0 0 rgb(0, 0, 0, 0.12);
 }
 
 @mixin buttonShadow {
   box-shadow:
-    0 0 4px rgba(0, 0, 0, 0.14),
-    0 4px 8px rgba(0, 0, 0, 0.28);
+    0 0 4px rgb(0, 0, 0, 0.14),
+    0 4px 8px rgb(0, 0, 0, 0.28);
 }
 
 @mixin buttonTransition {
@@ -113,7 +113,7 @@
 
 // darken color, remove shadow and border when pressed
 .btn:active {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(0, 0, 0, 0.4);
   box-shadow: none;
 }
 
@@ -144,7 +144,7 @@
     bottom: 60px;
   }
 
-  @media screen and (max-width: 1520px) {
+  @media screen and (width <= 1520px) {
     body:has(#reply-control.draft.show-preview) & {
       bottom: 60px;
     }
@@ -216,7 +216,7 @@
 }
 
 // Proper spacing for iPad portrait
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
+@media only screen and (width >= 768px) and (width <= 1250px) {
   .timeline-container {
     margin-left: 820px;
   }
@@ -298,7 +298,7 @@
 }
 
 // RTL Overrides
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
+@media only screen and (width >= 768px) and (width <= 1250px) {
   .rtl {
     .timeline-container {
       margin-left: initial;
@@ -331,7 +331,7 @@
 #main-chat-outlet {
   margin-top: 1.5em;
   box-shadow:
-    0 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    0 2px 1px -1px rgb(0, 0, 0, 0.2),
+    0 1px 1px 0 rgb(0, 0, 0, 0.14),
+    0 1px 3px 0 rgb(0, 0, 0, 0.12);
 }
