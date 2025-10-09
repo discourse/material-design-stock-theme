@@ -47,13 +47,13 @@ body textarea {
 
 // raise and round buttons
 .btn:not(
-    .sidebar-section-header,
-    .header-sidebar-toggle button,
-    .user-menu-tab,
-    .btn-flat,
-    .btn-link,
-    .btn-transparent
-  ) {
+  .sidebar-section-header,
+  .header-sidebar-toggle button,
+  .user-menu-tab,
+  .btn-flat,
+  .btn-link,
+  .btn-transparent
+) {
   border-radius: 4px;
 
   @include boxShadow;
