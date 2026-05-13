@@ -39,7 +39,6 @@
 // add shadow behind topics in Latest view
 .category-list,
 .topic-list,
-.column,
 .latest-topic-list {
   @include boxShadow;
   background-color: var(--material-lighter-secondary);
@@ -118,17 +117,16 @@
 }
 
 // New Topic Fab
-#create-topic.btn-default {
+.d-combo-button:has(#create-topic) {
   display: flex;
   align-items: center;
   justify-content: center;
 
   @include buttonShadow;
   @include buttonTransition;
-  padding: 0;
   margin: 0;
-  width: 63px;
   height: 63px;
+  width: 190px;
   border-radius: 40px;
   position: fixed;
   bottom: 30px;
@@ -138,6 +136,21 @@
   color: var(--secondary);
   white-space: nowrap;
   overflow: hidden;
+
+  .d-button-label {
+    color: var(--secondary);
+  }
+
+  button {
+    background: transparent;
+    box-shadow: none;
+    height: 100%;
+  }
+
+  .topic-drafts-menu-trigger {
+    border-left: 1px solid var(--secondary);
+    padding-left: 1em;
+  }
 
   .chat-drawer-active & {
     z-index: z("chat-drawer") - 1;
@@ -160,26 +173,10 @@
     transition: all 0.3s;
     margin: 0 0.25em;
   }
-
-  &:not(:hover, :active, :focus) {
-    .d-button-label {
-      opacity: 0;
-      width: 0;
-      margin: 0;
-    }
-
-    .d-icon {
-      margin: 0 0.25em;
-    }
-  }
 }
 
 #create-topic.btn-default .fa-plus {
   color: var(--secondary);
-}
-
-#create-topic.btn-default:hover {
-  width: 190px;
 }
 
 .timeline-container .topic-timeline .timeline-handle {

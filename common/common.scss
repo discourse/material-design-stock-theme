@@ -1,3 +1,7 @@
+:root {
+  --d-header-icon-background--hover: var(--header_primary-low);
+}
+
 @font-face {
   font-family: Roboto;
   src: url($roboto);
@@ -46,14 +50,9 @@ body textarea {
 @import "sidebar";
 
 // raise and round buttons
-.btn:not(
-  .sidebar-section-header,
-  .header-sidebar-toggle button,
-  .user-menu-tab,
-  .btn-flat,
-  .btn-link,
-  .btn-transparent
-) {
+.btn-default,
+.btn-primary,
+.d-combo-button {
   border-radius: 4px;
 
   @include boxShadow;
@@ -150,7 +149,7 @@ body textarea {
 
 // Chat
 body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
-  gap: 2em;
+  gap: 0 2em;
 }
 
 .has-full-page-chat:not(.discourse-sidebar) .full-page-chat {
@@ -192,4 +191,10 @@ body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
   .assigned-to .d-icon {
     color: var(--secondary);
   }
+}
+
+.topic-voting-menu-trigger {
+  // overrides some very specific button styles
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
