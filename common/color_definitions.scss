@@ -1,5 +1,13 @@
 @use "sass:color";
 
+@function lighter($color, $amount) {
+  @return color.to-gamut(
+    color.adjust($color, $lightness: $amount),
+    $method: clip
+  );
+}
+
 :root {
-  --material-lighter-secondary: color.adjust($secondary, $lightness: 10%);
+  --material-lighter-secondary: #{lighter($secondary, 10%)};
+  --material-highlight-start: #{lighter($tertiary, 20%)};
 }

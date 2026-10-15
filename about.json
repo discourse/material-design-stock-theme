@@ -1,7 +1,7 @@
 {
   "name": "Material Design Theme",
   "about_url": "https://meta.discourse.org/t/material-design-stock-theme/47142",
-  "license_url": "https://github.com/discourse/material-design-stock-theme/blob/master/LICENSE.txt",
+  "license_url": "https://github.com/discourse/material-design-stock-theme/blob/main/LICENSE.txt",
   "color_schemes": {
     "Material Teal/Amber": {
       "primary": "212121",
@@ -71,9 +71,9 @@
     }
   },
   "assets": {
-    "roboto": "assets/Roboto-Regular.ttf",
-    "roboto-bold": "assets/Roboto-Bold.ttf",
-    "roboto-italic": "assets/Roboto-Italic.ttf"
+    "roboto": "assets/Roboto-Regular.woff2",
+    "roboto-bold": "assets/Roboto-Bold.woff2",
+    "roboto-italic": "assets/Roboto-Italic.woff2"
   },
   "screenshots": ["screenshots/light.png", "screenshots/dark.png"]
 }
