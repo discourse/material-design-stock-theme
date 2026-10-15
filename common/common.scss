@@ -1,63 +1,34 @@
+@use "lib/viewport";
+
 :root {
   --d-header-icon-background--hover: var(--header_primary-low);
+
+  // Matched from https://m2.material.io/components/cards
+  --material-shadow-raised:
+    0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+  --material-shadow-card: 0 2px 5px 0 rgb(0 0 0 / 16%);
+  --material-shadow-fab: 0 0 4px rgb(0 0 0 / 14%), 0 4px 8px rgb(0 0 0 / 28%);
 }
 
-@font-face {
-  font-family: Roboto;
-  src: url($roboto);
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url($roboto-bold);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url($roboto-italic);
-  font-style: italic;
-}
-
-html {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-}
-
-body input,
-body button,
-body select,
-body textarea {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-}
-
-@mixin boxShadow {
-  // Matched from https://material.io/components/cards/
-  box-shadow:
-    0 2px 1px -1px rgb(0, 0, 0, 0.2),
-    0 1px 1px 0 rgb(0, 0, 0, 0.14),
-    0 1px 3px 0 rgb(0, 0, 0, 0.12);
-}
-
-@mixin buttonShadow {
-  // Matched from https://material.io/components/buttons/
-  box-shadow:
-    0 3px 1px -2px rgb(0, 0, 0, 0.2),
-    0 2px 2px 0 rgb(0, 0, 0, 0.14),
-    0 1px 5px 0 rgb(0, 0, 0, 0.12);
-}
-
+@import "fonts";
 @import "sidebar";
+@import "floating-buttons";
 
 // raise and round buttons
 .btn-default,
 .btn-primary,
 .d-combo-button {
   border-radius: 4px;
-
-  @include boxShadow;
+  box-shadow: var(--material-shadow-raised);
 
   &.btn-flat.close {
+    box-shadow: none;
+  }
+
+  // darken and flatten when pressed
+  &:active {
+    background-image: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%));
     box-shadow: none;
   }
 }
@@ -72,21 +43,112 @@ body textarea {
 #revision .btn,
 #new-account-link,
 #login-link,
-.dropdown-menu li .btn {
+.dropdown-menu li .btn,
+.popup-menu .btn,
+.list-controls .nav-pills .list-control-toggle-link-trigger {
   border-radius: 0;
   box-shadow: none;
 }
 
+@include viewport.until(md) {
+  .list-controls .container {
+    #create-topic {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .topic-drafts-menu-trigger {
+      border-radius: 0 4px 4px 0;
+      margin-left: -7px;
+    }
+  }
+}
+
+@include viewport.from(md) {
+  .d-header-icons .d-icon {
+    color: var(--tertiary);
+  }
+
+  // card shadows behind topic and category lists
+  .category-list,
+  .topic-list,
+  .latest-topic-list {
+    box-shadow: var(--material-shadow-card);
+    background-color: var(--material-lighter-secondary);
+  }
+
+  .column {
+    align-self: start;
+  }
+
+  .user-main {
+    .nav-pills {
+      a.active .d-icon {
+        color: var(--primary);
+      }
+
+      a:hover:not(.active) .d-icon {
+        color: var(--quaternary);
+      }
+    }
+
+    // keep button shadows from being clipped
+    .about .controls {
+      padding-right: 10px;
+    }
+  }
+}
+
 // Topic adjustments
+.topic-body {
+  box-shadow: var(--material-shadow-card);
+  background-color: var(--material-lighter-secondary);
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 20px;
+
+  @include viewport.from(md) {
+    padding: 15px 20px 0;
+  }
+}
+
+.topic-avatar {
+  border-top: 0;
+
+  .avatar-flair {
+    right: 4px;
+  }
+
+  @include viewport.until(md) {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  @include viewport.from(md) {
+    padding-right: 10px;
+  }
+}
+
+// remove lines between cards
+.topic-post article {
+  border: none;
+}
+
+// increase space between post meta and post content
+.mobile-view .boxed .contents {
+  padding: 20px 0 0;
+}
+
+// remove stray border from bottom of last post
+.topic-status-info {
+  border-top: 0;
+}
+
 .small-action {
-  border-top: none;
   box-sizing: border-box;
   margin-block: 1em 0.5em;
   border: none;
   border-radius: 4px;
-  box-shadow:
-    0 2px 5px 0 rgb(0, 0, 0, 0.16),
-    0 0 0 0 rgb(0, 0, 0, 0.12);
+  box-shadow: var(--material-shadow-card);
   max-width: 754px;
   padding-left: 20px;
 
@@ -105,6 +167,33 @@ body textarea {
 
   .small-action-desc {
     border: none;
+  }
+}
+
+// improve format of embedded posts
+.embedded-posts {
+  border: none;
+
+  .topic-avatar {
+    padding-left: 0;
+  }
+
+  &.top {
+    padding-left: 2em;
+
+    .row .topic-avatar,
+    .row .topic-body {
+      border: none;
+    }
+
+    .collapse-down {
+      transform: translate(-120%, 62%);
+    }
+
+    &.topic-body {
+      box-shadow: none;
+      background-color: var(--secondary);
+    }
   }
 }
 
@@ -127,8 +216,66 @@ body textarea {
   }
 }
 
-.popup-menu .btn {
-  box-shadow: none;
+#main-outlet .topic-map {
+  padding: 10px;
+  margin-top: 0.75em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: var(--material-shadow-card);
+
+  .desktop-view & {
+    padding: 15px 30px;
+    max-width: 752px;
+    margin-left: calc(var(--topic-avatar-width) + 10px);
+  }
+}
+
+.topic-timer-info {
+  border: none;
+}
+
+.timeline-container .topic-timeline .timeline-handle {
+  background-color: var(--tertiary-medium);
+}
+
+.extra-info-wrapper {
+  .badge-category__wrapper .d-icon,
+  .title-wrapper .topic-statuses .d-icon,
+  .assigned-to .d-icon {
+    color: var(--secondary);
+  }
+}
+
+.topic-voting-menu-trigger {
+  // overrides some very specific button styles
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+@keyframes background-fade-highlight {
+  0% {
+    background-color: var(--material-highlight-start);
+  }
+
+  100% {
+    background-color: var(--material-lighter-secondary);
+  }
+}
+
+// cards for search results
+.fps-result {
+  box-shadow: var(--material-shadow-card);
+  background-color: var(--material-lighter-secondary);
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+// put shadow on quotes on small screens
+@include viewport.until(md) {
+  aside.quote {
+    box-shadow: var(--material-shadow-card);
+  }
 }
 
 // Personal messages
@@ -137,8 +284,16 @@ body textarea {
     box-shadow: none;
 
     .cooked {
-      @include boxShadow;
+      box-shadow: var(--material-shadow-raised);
     }
+
+    .desktop-view & {
+      margin-left: -2em;
+    }
+  }
+
+  .desktop-view & .small-action {
+    max-width: 758px;
   }
 }
 
@@ -158,43 +313,17 @@ body.has-sidebar-page.has-full-page-chat #main-outlet-wrapper {
 
 .chat-channel-card {
   background: var(--primary-very-low);
-  border: 1px solid;
-  border-left: 5px solid;
-  border-top-color: var(--primary-low) !important;
-  border-bottom-color: var(--primary-low) !important;
-  border-right-color: var(--primary-low) !important;
+  border: 1px solid var(--primary-low);
+  border-left: 5px solid var(--chat-channel-card-border);
 }
 
-#main-outlet .topic-map {
-  padding: 10px;
-  margin-top: 0.75em;
-  border: none;
-  border-radius: 4px;
-  box-shadow:
-    0 2px 5px 0 rgb(0, 0, 0, 0.16),
-    0 0 0 0 rgb(0, 0, 0, 0.12);
-
-  .desktop-view & {
-    padding: 15px 30px;
-    max-width: 752px;
-    margin-left: calc(var(--topic-avatar-width) + 10px);
+@include viewport.from(md) {
+  .chat-channel {
+    height: calc(100dvh - (var(--header-offset) + 6em));
   }
-}
 
-.topic-timer-info {
-  border: none;
-}
-
-.extra-info-wrapper {
-  .badge-category__wrapper .d-icon,
-  .title-wrapper .topic-statuses .d-icon,
-  .assigned-to .d-icon {
-    color: var(--secondary);
+  #main-chat-outlet {
+    margin-top: 1.5em;
+    box-shadow: var(--material-shadow-raised);
   }
-}
-
-.topic-voting-menu-trigger {
-  // overrides some very specific button styles
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
 }

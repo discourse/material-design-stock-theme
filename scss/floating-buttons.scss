@@ -1,0 +1,94 @@
+@use "lib/viewport";
+
+@mixin fab-transition {
+  transition:
+    inset 0.5s,
+    border-radius 0.5s,
+    width 0.2s ease,
+    height 0.5s ease 0.4s,
+    color 0.5s,
+    background-color 2s,
+    transform 0.5s;
+}
+
+// New Topic FAB
+@include viewport.from(md) {
+  .d-combo-button:has(#create-topic) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 63px;
+    width: 190px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: z("composer", "content") - 1;
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: var(--material-shadow-fab);
+
+    @include fab-transition;
+
+    button {
+      background: transparent;
+      box-shadow: none;
+      height: 100%;
+    }
+
+    .topic-drafts-menu-trigger {
+      border-left: 1px solid var(--secondary);
+      padding-left: 1em;
+    }
+
+    .chat-drawer-active & {
+      z-index: z("chat-drawer") - 1;
+      bottom: 60px;
+    }
+
+    @media screen and (width <= 1520px) {
+      body:has(#reply-control.draft.show-preview) & {
+        bottom: 60px;
+      }
+    }
+
+    .d-icon {
+      margin: 0;
+      color: var(--secondary);
+    }
+
+    .d-button-label {
+      display: inline-block;
+      transition: all 0.3s;
+      margin: 0 0.25em;
+      color: var(--secondary);
+    }
+  }
+}
+
+// Reply FAB in the topic timeline
+.timeline-footer-controls {
+  position: relative;
+
+  .btn.reply-to-post {
+    position: absolute;
+    top: 55px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--tertiary);
+    box-shadow: var(--material-shadow-fab);
+
+    @include fab-transition;
+
+    .d-icon {
+      color: var(--secondary);
+      font-size: 20px;
+    }
+  }
+}
